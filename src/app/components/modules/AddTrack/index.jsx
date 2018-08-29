@@ -19,7 +19,7 @@ const CenteredSection = styled.section`
 `;
 
 
-const Home = ({ installation: { loading }, songs, ...props }) => {
+const AddTrack = ({ installation: { loading }, songs, ...props }) => {
     return (
         <CenteredSection>
             <LogoIcon />
@@ -38,7 +38,7 @@ const Home = ({ installation: { loading }, songs, ...props }) => {
         </CenteredSection>
 )};
 
-Home.propTypes = {
+AddTrack.propTypes = {
     install: PT.func.isRequired,
     installation: PT.shape({
         loading: PT.bool,
@@ -50,4 +50,4 @@ Home.propTypes = {
 export default connect(state => ({
     installation: state.data,
     songs: state.data.songs,
-}), { install, resetItems })(Home);
+}), { install, resetItems })(AddTrack);

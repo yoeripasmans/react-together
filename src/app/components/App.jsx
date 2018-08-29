@@ -1,11 +1,13 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Home from 'modules/Home';
+import Playlist from 'modules/Playlist';
+import AddTrack from 'modules/AddTrack';
 
 const App = () => (
     <main>
         <Switch>
-            <Route path="/" component={Home} exact />
+            <Route path="/playlist" component={Playlist} exact />
+            <Route path="/search" component={AddTrack} exact />
         </Switch>
     </main>
 );
