@@ -1,15 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PT from 'prop-types';
 import { connect } from 'react-redux';
 import Queue from 'modules/Playlist/components/Queue';
-import { install, resetItems } from 'ducks/data';
+import { getTracks, resetItems } from 'ducks/data';
 
-const Playlist = ({ installation: { loading }, songs, ...props }) => (
-    <Queue />
-);
+class Playlist extends Component {
+    componentDidMount() {
+        this.props.getTracks();
+    }
+
+    render() {
+        const { loading, songs } = this.props;
+
+        return (
+            <div>
+                {loading ? 'loading' : songs.map(song => (
+                    <div key={song.name}>{song.name}</div>
+                ))}
+            </div>
+        )
+    }
+}
+
+// const Playlist = ({ installation: { loading }, songs, ...props }) => (
+//     <Queue data={props} />
+// );
 
 Playlist.propTypes = {
-    install: PT.func.isRequired,
+    getTracks: PT.func.isRequired,
     installation: PT.shape({
         loading: PT.bool,
         passed: PT.bool,
@@ -20,4 +38,5 @@ Playlist.propTypes = {
 export default connect(state => ({
     installation: state.data,
     songs: state.data.songs,
-}), { install, resetItems })(Playlist);
+    loading: state.data.loading,
+}), { getTracks, resetItems })(Playlist);
