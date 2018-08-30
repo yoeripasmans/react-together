@@ -6,7 +6,7 @@ import BackButton from 'common/BackButton';
 import SearchBar from 'common/SearchBar';
 
 const Header = styled.header`
-    padding: 2rem;
+    padding: 2rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 `;
