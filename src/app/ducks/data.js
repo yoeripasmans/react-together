@@ -10,7 +10,7 @@ const RESET_DATA = 'RESET_DATA';
 const initialState = {
     error: false,
     loading: false,
-    songs: [],
+    tracks: [],
 };
 
 export default (state = initialState, { type, payload }) => {
@@ -19,7 +19,7 @@ export default (state = initialState, { type, payload }) => {
         return {
             ...state,
             loading: false,
-            songs: payload,
+            tracks: payload,
         };
     case GET_DATA_FAILED:
         return {
@@ -36,7 +36,7 @@ export default (state = initialState, { type, payload }) => {
     case RESET_DATA:
         return {
             ...state,
-            songs: [],
+            tracks: [],
         };
     default:
         return state;
@@ -52,7 +52,7 @@ export const getTracks = () => (dispatch, getState, api) => {
 
     const query = {
         method: 'artist.gettoptracks',
-        artist: '2pac',
+        artist: 'drake',
     };
 
     api.get({ path: '', query })
