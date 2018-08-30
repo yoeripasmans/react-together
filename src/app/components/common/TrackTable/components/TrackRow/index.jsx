@@ -1,4 +1,5 @@
 import React from 'react';
+import { Tr, Td, Img } from '../../styled';
 
 const TrackRow = ({ tracks }) => (
 

@@ -2,16 +2,17 @@ import React from 'react';
 import PT from 'prop-types';
 import TrackCategoryRow from './components/TrackCategoryRow';
 import TrackRow from './components/TrackRow';
+import { Table } from './styled';
 
 const TrackTable = ({ tracks }) => (
-    <table>
+    <Table>
         <thead>
             <TrackCategoryRow />
         </thead>
         <tbody>
             <TrackRow tracks={tracks} />
         </tbody>
-    </table>
+    </Table>
 );
 
 TrackTable.propTypes = {

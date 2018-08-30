@@ -1,13 +1,14 @@
 import React from 'react';
+import { Tr, Th } from '../../styled';
 
 const TrackCategoryRow = () => (
 
-    <tr>
-        <th>Image</th>
-        <th>Name</th>
-        <th>Artist</th>
-        <th>Likes</th>
-    </tr>
+    <Tr>
+        <Th>Image</Th>
+        <Th>Name</Th>
+        <Th>Artist</Th>
+        <Th>Likes</Th>
+    </Tr>
 
 );
 
