@@ -14,7 +14,7 @@ const SearchBar = ({ value, onChangeHandler }) => (
 
 SearchBar.propTypes = {
     value: PT.string,
-    onChangeHandler: PT.object,
+    onChangeHandler: PT.func.isRequired,
 };
 
 export default SearchBar;

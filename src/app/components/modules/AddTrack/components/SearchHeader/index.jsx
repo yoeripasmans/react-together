@@ -31,7 +31,7 @@ const SearchHeader = ({ searchValue, inputOnchangeHandler }) => (
 );
 SearchHeader.propTypes = {
     searchValue: PT.string,
-    inputOnchangeHandler: PT.object,
+    inputOnchangeHandler: PT.func.isRequired,
 };
 
 export default SearchHeader;
