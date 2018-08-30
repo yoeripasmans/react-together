@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 
 import { install, resetItems } from 'ducks/data';
-import LogoIcon from 'vectors/logo.svg';
 import Button from 'common/Button';
 
 const CenteredSection = styled.section`

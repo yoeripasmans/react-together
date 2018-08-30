@@ -1,50 +1,32 @@
-import React, { Fragment } from 'react';
+import React, { Component } from 'react';
 import PT from 'prop-types';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 
 import { install, resetItems } from 'ducks/data';
-import LogoIcon from 'vectors/logo.svg';
-import Button from 'common/Button';
+import SearchHeader from './components/SearchHeader';
 
-const CenteredSection = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-
-    svg {
-        margin: 50px 0;
-    }
+const OverlaySection = styled.section`
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(50,50,50);
 `;
 
-
-const AddTrack = ({ installation: { loading }, songs, ...props }) => {
-    return (
-        <CenteredSection>
-            <LogoIcon />
-            {songs.length > 0 ? (
-                <Fragment>
-                    <Button onClick={props.resetItems}>Reset</Button>
-                    <ul>
-                        {songs.map(song => <li key={song.name}>{song.name}</li>)}
-                    </ul>
-                </Fragment>
-            ) : (
-                <Button onClick={props.install}>
-                    {loading ? 'Installing ...' : 'Test installation'}
-                </Button>
-            )}
-        </CenteredSection>
-)};
+class AddTrack extends Component {
+    inputOnchangeHandler = (event) => {
+        // update search value
+    };
+    render() {
+        return (
+            <OverlaySection>
+                <SearchHeader searchValue="Testvalue" inputOnchangeHandler={this.inputOnchangeHandler} />
+            </OverlaySection>
+        );
+    }
+}
 
 AddTrack.propTypes = {
-    install: PT.func.isRequired,
-    installation: PT.shape({
-        loading: PT.bool,
-        passed: PT.bool,
-    }),
-    songs: PT.array,
 };
 
 export default connect(state => ({
