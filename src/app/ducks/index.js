@@ -1,1 +1,1 @@
-export data from './data';
+export playlist from './playlist';

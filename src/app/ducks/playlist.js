@@ -51,13 +51,12 @@ export const getTracks = () => (dispatch, getState, api) => {
     dispatch({ type: GET_DATA });
 
     const query = {
-        method: 'artist.gettoptracks',
-        artist: 'drake',
+        method: 'chart.gettoptracks',
     };
 
     api.get({ path: '', query })
         .then((res) => {
-            dispatch(getDataSuccess(res.toptracks.track));
+            dispatch(getDataSuccess(res.tracks.track));
         });
 };
 
