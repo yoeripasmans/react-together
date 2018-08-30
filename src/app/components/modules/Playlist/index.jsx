@@ -49,4 +49,5 @@ Playlist.propTypes = {
 export default connect(state => ({
     installation: state.data,
     songs: state.data.songs,
-}), { install, resetItems })(Playlist);
+    loading: state.data.loading,
+}), { getTracks, resetItems })(Playlist);
