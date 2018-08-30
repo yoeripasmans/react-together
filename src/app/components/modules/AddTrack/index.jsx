@@ -2,34 +2,61 @@ import React, { Component } from 'react';
 import PT from 'prop-types';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
+import _ from 'lodash/fp';
 
-import { install, resetItems } from 'ducks/playlist';
+import { getSearchResults } from 'ducks/search';
+
+import TrackTable from 'common/TrackTable'
 import SearchHeader from './components/SearchHeader';
 
-const OverlaySection = styled.section`
+const Section = styled.section`
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(50,50,50);
+    background-color: rgb(0,0,0);
 `;
 
 class AddTrack extends Component {
-    inputOnchangeHandler = (event) => {
-        // update search value
+    state = {
+        value: '',
+    }
+
+    getSearchResults = _.debounce(500)(() => {
+        this.props.getSearchResults(this.state.value);
+    });
+
+    inputOnChangeHandler = (event) => {
+        this.setState(
+            { value: event.target.value },
+            () => this.getSearchResults(),
+        );
     };
+
+    inputClearHandler = () => {
+        this.setState({ value: '' });
+    };
+
     render() {
+        const { results } = this.props;
+        console.log(results);
         return (
-            <OverlaySection>
-                <SearchHeader searchValue="Testvalue" inputOnchangeHandler={this.inputOnchangeHandler} />
-            </OverlaySection>
+            <Section>
+                <SearchHeader
+                    searchValue={this.state.value}
+                    inputOnChangeHandler={this.inputOnChangeHandler}
+                    inputClearHandler={this.inputClearHandler}
+                />
+                <TrackTable tracks={results} />
+            </Section>
         );
     }
 }
 
 AddTrack.propTypes = {
+    getSearchResults: PT.func.isRequired,
+    tracks: PT.array,
 };
 
 export default connect(state => ({
-    installation: state.playlist,
-    songs: state.playlist.songs,
-}), { install, resetItems })(AddTrack);
+    results: state.search.results,
+}), { getSearchResults })(AddTrack);
