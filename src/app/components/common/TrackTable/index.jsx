@@ -1,11 +1,21 @@
 import React from 'react';
+import PT from 'prop-types';
 import TrackCategoryRow from './components/TrackCategoryRow';
+import TrackRow from './components/TrackRow';
 
-const Tracktable = ({ rows }) => (
+const TrackTable = ({ tracks }) => (
     <table>
-        <TrackCategoryRow />
-        <tbody>{rows}</tbody>
+        <thead>
+            <TrackCategoryRow />
+        </thead>
+        <tbody>
+            <TrackRow tracks={tracks} />
+        </tbody>
     </table>
 );
 
-export default Tracktable;
+TrackTable.propTypes = {
+    tracks: PT.array,
+};
+
+export default TrackTable;

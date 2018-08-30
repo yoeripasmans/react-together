@@ -1,6 +1,7 @@
 import React from 'react';
+import PT from 'prop-types';
 import styled from 'styled-components';
-import TrackTable from 'common/Tracktable';
+import TrackTable from 'common/TrackTable';
 import QueueHeader from './components/QueueHeader';
 
 
@@ -8,11 +9,16 @@ const Section = styled.section`
 width: 100%;
 `;
 
-const Queue = () => (
+const Queue = ({ tracks }) => (
     <Section>
         <QueueHeader />
-        <TrackTable />
+        <TrackTable tracks={tracks} />
     </Section>
 );
+
+
+Queue.propTypes = {
+    tracks: PT.array,
+};
 
 export default Queue;
