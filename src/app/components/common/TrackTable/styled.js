@@ -19,12 +19,13 @@ export const Td = styled.td`
     line-height: 1.2;
 `;
 
-export const Th = styled.td`
+export const Th = styled.th`
     display: flex;
     align-items: center;
     line-height: 1.2;
     text-transform: uppercase;
     font-size: 0.9em;
+    font-weight: 400;
     opacity: 0.8;
 `;
 

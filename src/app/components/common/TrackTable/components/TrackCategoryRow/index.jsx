@@ -4,10 +4,10 @@ import { Tr, Th } from '../../styled';
 const TrackCategoryRow = () => (
 
     <Tr>
-        <Th>Image</Th>
+        <Th />
         <Th>Name</Th>
         <Th>Artist</Th>
-        <Th>Likes</Th>
+        <Th />
     </Tr>
 
 );
