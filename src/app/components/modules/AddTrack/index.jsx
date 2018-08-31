@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import _ from 'lodash/fp';
 
 import { getSearchResults, resetSearchResults } from 'ducks/search';
+import { addTrack } from 'ducks/playlist';
 
 import TrackTable from 'common/TrackTable';
 import SearchHeader from './components/SearchHeader';
@@ -24,8 +25,8 @@ class AddTrack extends Component {
         this.props.getSearchResults(this.state.value);
     });
 
-    addTrackHandler = () => {
-        // put add track functionality here
+    addTrackHandler = (track) => {
+        this.props.addTrack(track);
     };
 
     inputOnChangeHandler = (event) => {
@@ -64,9 +65,10 @@ class AddTrack extends Component {
 AddTrack.propTypes = {
     getSearchResults: PT.func.isRequired,
     resetSearchResults: PT.func.isRequired,
+    addTrack: PT.func,
     results: PT.array,
 };
 
 export default connect(state => ({
     results: state.search.results,
-}), { getSearchResults, resetSearchResults })(AddTrack);
+}), { getSearchResults, resetSearchResults, addTrack })(AddTrack);
