@@ -5,11 +5,7 @@ import { Button, ScPlusIcon, ScCrossIcon } from './styled';
 import { Tr, Td, Img } from '../../styled';
 
 const TrackRow = ({
-    track: {
-        image,
-        name,
-        artistName,
-    },
+    track,
     tableMutateHandler,
     mutateButtonType,
 }) => {
@@ -23,20 +19,16 @@ const TrackRow = ({
 
     return (
         <Tr>
-            <Td><Img src={image} alt={name} /></Td>
-            <Td>{name}</Td>
-            <Td>{artistName}</Td>
-            <Td><Button onClick={tableMutateHandler}>{ButtonSvg}</Button></Td>
+            <Td><Img src={track.image} alt={track.name} /></Td>
+            <Td>{track.name}</Td>
+            <Td>{track.artistName}</Td>
+            <Td><Button onClick={() => tableMutateHandler(track)}>{ButtonSvg}</Button></Td>
         </Tr>
     );
 };
 
 TrackRow.propTypes = {
-    track: PT.shape({
-        image: PT.string,
-        name: PT.string,
-        artistName: PT.string,
-    }),
+    track: PT.object,
     tableMutateHandler: PT.func,
     mutateButtonType: PT.string,
 };

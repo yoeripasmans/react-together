@@ -5,6 +5,7 @@ import _ from 'lodash/fp';
 // import Loader from 'react-loader';
 
 import { getSearchResults, resetSearchResults } from 'ducks/search';
+import { addTrack } from 'ducks/playlist';
 
 import TrackTable from 'common/TrackTable';
 import { Section, ScLoader } from './styled';
@@ -23,8 +24,8 @@ class AddTrack extends Component {
         this.props.getSearchResults(this.state.value);
     });
 
-    addTrackHandler = () => {
-        // put add track functionality here
+    addTrackHandler = (track) => {
+        this.props.addTrack(track);
     };
 
     inputOnChangeHandler = (event) => {
@@ -64,6 +65,7 @@ class AddTrack extends Component {
 AddTrack.propTypes = {
     getSearchResults: PT.func.isRequired,
     resetSearchResults: PT.func.isRequired,
+    addTrack: PT.func,
     results: PT.array,
     loading: PT.bool,
 };
@@ -71,4 +73,4 @@ AddTrack.propTypes = {
 export default connect(state => ({
     results: state.search.results,
     loading: state.search.loading,
-}), { getSearchResults, resetSearchResults })(AddTrack);
+}), { getSearchResults, resetSearchResults, addTrack })(AddTrack);
