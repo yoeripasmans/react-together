@@ -6,7 +6,7 @@ import BackButton from 'common/BackButton';
 import SearchBar from 'common/SearchBar';
 
 const Header = styled.header`
-    padding: 2rem;
+    padding: 2rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 `;
@@ -20,18 +20,24 @@ const H1 = styled.h1`
     font-size: 2.5rem;
 `;
 
-const SearchHeader = ({ searchValue, inputOnchangeHandler }) => (
+const SearchHeader = ({ searchValue, inputOnChangeHandler, inputClearHandler }) => (
     <Header>
         <GridDiv1>
             <BackButton destination="/playlist" value="Back to playlist" />
             <H1>Add songs</H1>
         </GridDiv1>
-        <SearchBar inputOnchangeHandler={inputOnchangeHandler} value={searchValue} />
+        <SearchBar
+            inputOnChangeHandler={inputOnChangeHandler}
+            inputClearHandler={inputClearHandler}
+            value={searchValue}
+            placeholderValue="Type to search..."
+        />
     </Header>
 );
 SearchHeader.propTypes = {
     searchValue: PT.string,
-    inputOnchangeHandler: PT.func.isRequired,
+    inputOnChangeHandler: PT.func.isRequired,
+    inputClearHandler: PT.func.isRequired,
 };
 
 export default SearchHeader;

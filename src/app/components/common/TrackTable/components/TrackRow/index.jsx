@@ -4,10 +4,10 @@ import { Tr, Td, Img } from '../../styled';
 const TrackRow = ({ tracks }) => (
 
     tracks.map(track => (
-        <Tr key={track.name}>
-            <Td><Img src={track.image[0]['#text']} alt={track.name} /></Td>
+        <Tr key={track.url}>
+            <Td><Img src={track.image} alt={track.name} /></Td>
             <Td>{track.name}</Td>
-            <Td>{track.artist.name}</Td>
+            <Td>{track.artistName}</Td>
             <Td>0</Td>
         </Tr>))
 

@@ -19,7 +19,12 @@ export default (state = initialState, { type, payload }) => {
         return {
             ...state,
             loading: false,
-            tracks: payload,
+            tracks: payload.map(track => ({
+                url: track.url,
+                name: track.name,
+                image: track.image[0]['#text'],
+                artistName: track.artist.name,
+            })),
         };
     case GET_DATA_FAILED:
         return {
