@@ -5,6 +5,8 @@ const GET_SEARCH_RESULTS = 'GET_SEARCH_RESULTS';
 const GET_SEARCH_RESULTS_SUCCES = 'GET_SEARCH_RESULTS_SUCCES';
 const GET_SEARCH_RESULTS_FAILED = 'GET_SEARCH_RESULTS_FAILED';
 
+const RESET_SEARCH_RESULTS = 'RESET_SEARCH_RESULTS';
+
 // Reducer
 const initialState = {
     error: false,
@@ -18,7 +20,12 @@ export default (state = initialState, { type, payload }) => {
         return {
             ...state,
             loading: false,
-            results: payload,
+            results: payload.map(track => ({
+                url: track.url,
+                name: track.name,
+                image: track.image[0]['#text'],
+                artistName: track.artist,
+            })),
         };
     case GET_SEARCH_RESULTS_FAILED:
         return {
@@ -32,16 +39,25 @@ export default (state = initialState, { type, payload }) => {
             loading: true,
             error: false,
         };
+    case RESET_SEARCH_RESULTS:
+        return initialState;
     default:
         return state;
     }
 };
 
 // Actions
+export const resetSearchResults = createAction(RESET_SEARCH_RESULTS);
+
 export const getResultsSuccess = createAction(GET_SEARCH_RESULTS_SUCCES);
 export const getResultsFailed = createAction(GET_SEARCH_RESULTS_FAILED);
 
-export const getSearchResults = (searchQuery) => (dispatch, getState, api) => {
+export const getSearchResults = searchQuery => (dispatch, getState, api) => {
+    if (searchQuery === '') {
+        dispatch(resetSearchResults());
+        return;
+    }
+
     dispatch({ type: GET_SEARCH_RESULTS });
 
     const query = {
@@ -51,7 +67,6 @@ export const getSearchResults = (searchQuery) => (dispatch, getState, api) => {
 
     api.get({ path: '', query })
         .then((res) => {
-            console.log(res);
             dispatch(getResultsSuccess(res.results.trackmatches.track));
         });
 };

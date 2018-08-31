@@ -30,6 +30,7 @@ const SearchHeader = ({ searchValue, inputOnChangeHandler, inputClearHandler }) 
             inputOnChangeHandler={inputOnChangeHandler}
             inputClearHandler={inputClearHandler}
             value={searchValue}
+            placeholderValue="Type to search..."
         />
     </Header>
 );

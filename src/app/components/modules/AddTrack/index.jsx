@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 import _ from 'lodash/fp';
 
-import { getSearchResults } from 'ducks/search';
+import { getSearchResults, resetSearchResults } from 'ducks/search';
 
-import TrackTable from 'common/TrackTable'
+import TrackTable from 'common/TrackTable';
 import SearchHeader from './components/SearchHeader';
 
 const Section = styled.section`
@@ -20,7 +20,7 @@ class AddTrack extends Component {
         value: '',
     }
 
-    getSearchResults = _.debounce(500)(() => {
+    getSearchResults = _.debounce(300)(() => {
         this.props.getSearchResults(this.state.value);
     });
 
@@ -32,12 +32,14 @@ class AddTrack extends Component {
     };
 
     inputClearHandler = () => {
-        this.setState({ value: '' });
+        this.setState(
+            { value: '' },
+            () => this.props.resetSearchResults(),
+        );
     };
 
     render() {
         const { results } = this.props;
-        console.log(results);
         return (
             <Section>
                 <SearchHeader
@@ -53,9 +55,10 @@ class AddTrack extends Component {
 
 AddTrack.propTypes = {
     getSearchResults: PT.func.isRequired,
-    tracks: PT.array,
+    resetSearchResults: PT.func.isRequired,
+    results: PT.array,
 };
 
 export default connect(state => ({
     results: state.search.results,
-}), { getSearchResults })(AddTrack);
+}), { getSearchResults, resetSearchResults })(AddTrack);
