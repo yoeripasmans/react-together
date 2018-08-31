@@ -3,6 +3,7 @@ import PT from 'prop-types';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 import _ from 'lodash/fp';
+import Loader from 'react-loader';
 
 import { getSearchResults, resetSearchResults } from 'ducks/search';
 
@@ -18,6 +19,10 @@ const Section = styled.section`
 class AddTrack extends Component {
     state = {
         value: '',
+    }
+
+    componentDidMount() {
+        this.inputClearHandler();
     }
 
     getSearchResults = _.debounce(300)(() => {
@@ -43,7 +48,7 @@ class AddTrack extends Component {
     };
 
     render() {
-        const { results } = this.props;
+        const { results, loading } = this.props;
         return (
             <Section>
                 <SearchHeader
@@ -51,11 +56,12 @@ class AddTrack extends Component {
                     inputOnChangeHandler={this.inputOnChangeHandler}
                     inputClearHandler={this.inputClearHandler}
                 />
-                <TrackTable
+
+                {loading ? <Loader color="#fff" /> : <TrackTable
                     tracks={results}
                     mutateButtonType="AddTrack"
                     tableMutateHandler={this.addTrackHandler}
-                />
+                />}
             </Section>
         );
     }
@@ -65,8 +71,10 @@ AddTrack.propTypes = {
     getSearchResults: PT.func.isRequired,
     resetSearchResults: PT.func.isRequired,
     results: PT.array,
+    loading: PT.bool,
 };
 
 export default connect(state => ({
     results: state.search.results,
+    loading: state.search.loading,
 }), { getSearchResults, resetSearchResults })(AddTrack);
