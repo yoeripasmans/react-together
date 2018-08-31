@@ -11,6 +11,7 @@ const initialState = {
     error: false,
     loading: false,
     tracks: [],
+    tracksLoaded: false,
 };
 
 export default (state = initialState, { type, payload }) => {
@@ -19,6 +20,7 @@ export default (state = initialState, { type, payload }) => {
         return {
             ...state,
             loading: false,
+            tracksLoaded: true,
             tracks: payload.map(track => ({
                 url: track.url,
                 name: track.name,
@@ -31,17 +33,13 @@ export default (state = initialState, { type, payload }) => {
             ...state,
             error: true,
             loading: false,
+            tracksLoaded: false,
         };
     case GET_DATA:
         return {
             ...state,
             loading: true,
             error: false,
-        };
-    case RESET_DATA:
-        return {
-            ...state,
-            tracks: [],
         };
     default:
         return state;

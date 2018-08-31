@@ -6,7 +6,8 @@ import QueueHeader from './components/QueueHeader';
 
 
 const Section = styled.section`
-width: 100%;
+    width: 100%;
+    margin: 2em 0;
 `;
 
 const Queue = ({ tracks, tableMutateHandler }) => (
