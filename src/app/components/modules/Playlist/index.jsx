@@ -9,13 +9,21 @@ class Playlist extends Component {
         this.props.getTracks();
     }
 
+    removeTrackHandler = () => {
+        // put remove track functionality here
+    };
+
     render() {
         const { loading, tracks } = this.props;
 
         if (loading) {
             return <div>Loading</div>;
         }
-        return <Queue tracks={tracks} />;
+        return (
+            <Queue
+                tracks={tracks}
+                tableMutateHandler={this.removeTrackHandler}
+            />);
     }
 }
 

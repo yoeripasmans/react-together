@@ -24,6 +24,10 @@ class AddTrack extends Component {
         this.props.getSearchResults(this.state.value);
     });
 
+    addTrackHandler = () => {
+        // put add track functionality here
+    };
+
     inputOnChangeHandler = (event) => {
         this.setState(
             { value: event.target.value },
@@ -47,7 +51,11 @@ class AddTrack extends Component {
                     inputOnChangeHandler={this.inputOnChangeHandler}
                     inputClearHandler={this.inputClearHandler}
                 />
-                <TrackTable tracks={results} />
+                <TrackTable
+                    tracks={results}
+                    mutateButtonType="AddTrack"
+                    tableMutateHandler={this.addTrackHandler}
+                />
             </Section>
         );
     }

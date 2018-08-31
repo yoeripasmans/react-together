@@ -4,19 +4,28 @@ import TrackCategoryRow from './components/TrackCategoryRow';
 import TrackRow from './components/TrackRow';
 import { Table } from './styled';
 
-const TrackTable = ({ tracks }) => (
+const TrackTable = ({ tracks, mutateButtonType, tableMutateHandler }) => (
     <Table>
         <thead>
             <TrackCategoryRow />
         </thead>
         <tbody>
-            <TrackRow tracks={tracks} />
+            {tracks.map(track => (
+                <TrackRow
+                    key={track.url}
+                    track={track}
+                    mutateButtonType={mutateButtonType}
+                    tableMutateHandler={tableMutateHandler}
+                />
+            ))}
         </tbody>
     </Table>
 );
 
 TrackTable.propTypes = {
     tracks: PT.array,
+    mutateButtonType: PT.string,
+    tableMutateHandler: PT.func,
 };
 
 export default TrackTable;

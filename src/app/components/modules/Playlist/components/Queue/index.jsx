@@ -9,16 +9,21 @@ const Section = styled.section`
 width: 100%;
 `;
 
-const Queue = ({ tracks }) => (
+const Queue = ({ tracks, tableMutateHandler }) => (
     <Section>
         <QueueHeader />
-        <TrackTable tracks={tracks} />
+        <TrackTable
+            tracks={tracks}
+            mutateButtonType="RemoveTrack"
+            tableMutateHandler={tableMutateHandler}
+        />
     </Section>
 );
 
 
 Queue.propTypes = {
     tracks: PT.array,
+    tableMutateHandler: PT.func,
 };
 
 export default Queue;
