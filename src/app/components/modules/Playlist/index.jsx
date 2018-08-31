@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PT from 'prop-types';
 import { connect } from 'react-redux';
 import Queue from 'modules/Playlist/components/Queue';
-import { getTracks, resetItems } from 'ducks/playlist';
+import { getTracks, resetItems, removeTrack } from 'ducks/playlist';
 import Loader from 'react-loader';
 
 class Playlist extends Component {
@@ -12,8 +12,8 @@ class Playlist extends Component {
         }
     }
 
-    removeTrackHandler = () => {
-        // put remove track functionality here
+    removeTrackHandler = (track) => {
+        this.props.removeTrack(track.url);
     };
 
     render() {
@@ -35,6 +35,7 @@ Playlist.propTypes = {
     loading: PT.bool,
     tracks: PT.array,
     tracksLoaded: PT.bool,
+    removeTrack: PT.func,
 };
 
 export default connect(state => ({
@@ -42,4 +43,4 @@ export default connect(state => ({
     tracks: state.playlist.tracks,
     loading: state.playlist.loading,
     tracksLoaded: state.playlist.tracksLoaded,
-}), { getTracks, resetItems })(Playlist);
+}), { getTracks, resetItems, removeTrack })(Playlist);

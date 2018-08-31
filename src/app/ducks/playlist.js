@@ -1,11 +1,14 @@
 import createAction from 'services/createAction';
 
 // Action  Types
-const GET_DATA = 'GET_DATA';
-const GET_DATA_SUCCESS = 'GET_DATA_SUCCESS';
-const GET_DATA_FAILED = 'GET_DATA_FAILED';
-const RESET_DATA = 'RESET_DATA';
+const GET_TRACKS = 'GET_TRACKS';
+const GET_TRACKS_SUCCESS = 'GET_TRACKS_SUCCESS';
+const GET_TRACKS_FAILED = 'GET_TRACKS_FAILED';
+const RESET_TRACKS = 'RESET_TRACKS';
 
+const ADD_TRACK = 'ADD_TRACK';
+
+const REMOVE_TRACK = 'REMOVE_TRACK';
 // Reducer
 const initialState = {
     error: false,
@@ -16,7 +19,7 @@ const initialState = {
 
 export default (state = initialState, { type, payload }) => {
     switch (type) {
-    case GET_DATA_SUCCESS:
+    case GET_TRACKS_SUCCESS:
         return {
             ...state,
             loading: false,
@@ -28,18 +31,28 @@ export default (state = initialState, { type, payload }) => {
                 artistName: track.artist.name,
             })),
         };
-    case GET_DATA_FAILED:
+    case GET_TRACKS_FAILED:
         return {
             ...state,
             error: true,
             loading: false,
             tracksLoaded: false,
         };
-    case GET_DATA:
+    case GET_TRACKS:
         return {
             ...state,
             loading: true,
             error: false,
+        };
+    case ADD_TRACK:
+        return {
+            ...state,
+            tracks: [...state.tracks, payload],
+        };
+    case REMOVE_TRACK:
+        return {
+            ...state,
+            tracks: state.tracks.filter(track => track.url !== payload),
         };
     default:
         return state;
@@ -47,11 +60,15 @@ export default (state = initialState, { type, payload }) => {
 };
 
 // Actions
-export const getDataSuccess = createAction(GET_DATA_SUCCESS);
-export const getDataFailed = createAction(GET_DATA_FAILED);
+export const getTracksSuccess = createAction(GET_TRACKS_SUCCESS);
+export const getTracksFailed = createAction(GET_TRACKS_FAILED);
+
+export const addTrack = createAction(ADD_TRACK);
+
+export const removeTrack = createAction(REMOVE_TRACK);
 
 export const getTracks = () => (dispatch, getState, api) => {
-    dispatch({ type: GET_DATA });
+    dispatch({ type: GET_TRACKS });
 
     const query = {
         method: 'chart.gettoptracks',
@@ -59,11 +76,11 @@ export const getTracks = () => (dispatch, getState, api) => {
 
     api.get({ path: '', query })
         .then((res) => {
-            dispatch(getDataSuccess(res.tracks.track));
+            dispatch(getTracksSuccess(res.tracks.track));
         });
 };
 
 
 export const resetItems = () => (dispatch) => {
-    dispatch({ type: RESET_DATA });
+    dispatch({ type: RESET_TRACKS });
 };
