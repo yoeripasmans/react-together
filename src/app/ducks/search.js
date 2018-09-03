@@ -4,6 +4,7 @@ import createAction from 'services/createAction';
 const GET_SEARCH_RESULTS = 'GET_SEARCH_RESULTS';
 const GET_SEARCH_RESULTS_SUCCES = 'GET_SEARCH_RESULTS_SUCCES';
 const GET_SEARCH_RESULTS_FAILED = 'GET_SEARCH_RESULTS_FAILED';
+const SET_SEARCH_LOADING = 'SET_SEARCH_LOADING';
 
 const RESET_SEARCH_RESULTS = 'RESET_SEARCH_RESULTS';
 
@@ -39,6 +40,11 @@ export default (state = initialState, { type, payload }) => {
             loading: true,
             error: false,
         };
+    case SET_SEARCH_LOADING:
+        return {
+            ...state,
+            loading: true,
+        };
     case RESET_SEARCH_RESULTS:
         return initialState;
     default:
@@ -48,9 +54,9 @@ export default (state = initialState, { type, payload }) => {
 
 // Actions
 export const resetSearchResults = createAction(RESET_SEARCH_RESULTS);
-
 export const getResultsSuccess = createAction(GET_SEARCH_RESULTS_SUCCES);
 export const getResultsFailed = createAction(GET_SEARCH_RESULTS_FAILED);
+export const setSearchLoading = createAction(SET_SEARCH_LOADING);
 
 export const getSearchResults = searchQuery => (dispatch, getState, api) => {
     if (searchQuery === '') {

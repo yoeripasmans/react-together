@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import _ from 'lodash/fp';
 // import Loader from 'react-loader';
 
-import { getSearchResults, resetSearchResults } from 'ducks/search';
+import { getSearchResults, resetSearchResults, setSearchLoading } from 'ducks/search';
 import { addTrack } from 'ducks/playlist';
 
 import TrackTable from 'common/TrackTable';
@@ -29,6 +29,7 @@ class AddTrack extends Component {
     };
 
     inputOnChangeHandler = (event) => {
+        this.props.setSearchLoading();
         this.setState(
             { value: event.target.value },
             () => this.getSearchResults(),
@@ -65,6 +66,7 @@ class AddTrack extends Component {
 AddTrack.propTypes = {
     getSearchResults: PT.func.isRequired,
     resetSearchResults: PT.func.isRequired,
+    setSearchLoading: PT.func,
     addTrack: PT.func,
     results: PT.array,
     loading: PT.bool,
@@ -73,4 +75,9 @@ AddTrack.propTypes = {
 export default connect(state => ({
     results: state.search.results,
     loading: state.search.loading,
-}), { getSearchResults, resetSearchResults, addTrack })(AddTrack);
+}), {
+    getSearchResults,
+    resetSearchResults,
+    setSearchLoading,
+    addTrack,
+})(AddTrack);
