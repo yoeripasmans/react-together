@@ -1,21 +1,15 @@
 import React, { Component } from 'react';
 import PT from 'prop-types';
-import styled from 'styled-components';
 import { connect } from 'react-redux';
 import _ from 'lodash/fp';
-import Loader from 'react-loader';
+// import Loader from 'react-loader';
 
 import { getSearchResults, resetSearchResults } from 'ducks/search';
 import { addTrack } from 'ducks/playlist';
 
 import TrackTable from './components/TrackTable';
+import { Section, ScLoader } from './styled';
 import SearchHeader from './components/SearchHeader';
-
-const Section = styled.section`
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(0,0,0);
-`;
 
 class AddTrack extends Component {
     state = {
@@ -58,7 +52,7 @@ class AddTrack extends Component {
                     inputClearHandler={this.inputClearHandler}
                 />
 
-                {loading ? <Loader color="#fff" /> : <TrackTable
+                {loading ? <ScLoader /> : <TrackTable
                     tracks={results}
                     mutateButtonType="AddTrack"
                     tableMutateHandler={this.addTrackHandler}

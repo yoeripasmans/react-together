@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
 import PT from 'prop-types';
+import styled from 'styled-components';
 import { connect } from 'react-redux';
-import Queue from 'modules/Playlist/components/Queue';
 import { getTracks, resetItems, removeTrack } from 'ducks/playlist';
-import Loader from 'react-loader';
+
+import Queue from 'modules/Playlist/components/Queue';
+import Loader from 'common/Loader';
+
+const ScLoader = styled(Loader)`
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+`;
 
 class Playlist extends Component {
     componentDidMount() {
@@ -20,7 +29,7 @@ class Playlist extends Component {
         const { loading, tracks } = this.props;
 
         if (loading) {
-            return <Loader color="#fff" />;
+            return <ScLoader />;
         }
         return (
             <Queue
