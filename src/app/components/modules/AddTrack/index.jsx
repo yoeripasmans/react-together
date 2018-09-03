@@ -7,7 +7,7 @@ import _ from 'lodash/fp';
 import { getSearchResults, resetSearchResults, setSearchLoading } from 'ducks/search';
 import { addTrack } from 'ducks/playlist';
 
-import TrackTable from 'common/TrackTable';
+import TrackTable from './components/TrackTable';
 import { Section, ScLoader } from './styled';
 import SearchHeader from './components/SearchHeader';
 
