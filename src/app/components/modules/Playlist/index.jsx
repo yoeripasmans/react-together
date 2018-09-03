@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PT from 'prop-types';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { getTracks, resetItems, removeTrack } from 'ducks/playlist';
 
+import ActiveUsers from 'modules/Playlist/components/ActiveUsers';
 import Queue from 'modules/Playlist/components/Queue';
 import Loader from 'common/Loader';
 
@@ -32,10 +33,14 @@ class Playlist extends Component {
             return <ScLoader />;
         }
         return (
-            <Queue
-                tracks={tracks}
-                tableMutateHandler={this.removeTrackHandler}
-            />);
+            <Fragment>
+                <ActiveUsers />
+                <Queue
+                    tracks={tracks}
+                    tableMutateHandler={this.removeTrackHandler}
+                />
+            </Fragment>
+        );
     }
 }
 

@@ -1,7 +1,7 @@
 import { injectGlobal } from 'styled-components';
 
 export default () => injectGlobal`
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:400,600,700');
 
     body {
         font-family: 'Open Sans', sans-serif;
