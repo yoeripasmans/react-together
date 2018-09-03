@@ -1,7 +1,7 @@
 import React from 'react';
 import PT from 'prop-types';
 import styled from 'styled-components';
-import TrackTable from 'common/TrackTable';
+import TrackTable from './components/TrackTable';
 import QueueHeader from './components/QueueHeader';
 
 

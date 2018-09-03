@@ -8,7 +8,7 @@ import Loader from 'react-loader';
 import { getSearchResults, resetSearchResults } from 'ducks/search';
 import { addTrack } from 'ducks/playlist';
 
-import TrackTable from 'common/TrackTable';
+import TrackTable from './components/TrackTable';
 import SearchHeader from './components/SearchHeader';
 
 const Section = styled.section`
