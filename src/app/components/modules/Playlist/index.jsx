@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { getTracks, resetItems, removeTrack } from 'ducks/playlist';
 
+import PlaylistHeader from 'modules/Playlist/components/PlaylistHeader';
 import ActiveUsers from 'modules/Playlist/components/ActiveUsers';
 import Queue from 'modules/Playlist/components/Queue';
 import Loader from 'common/Loader';
@@ -34,6 +35,7 @@ class Playlist extends Component {
         }
         return (
             <Fragment>
+                <PlaylistHeader />
                 <ActiveUsers />
                 <Queue
                     tracks={tracks}

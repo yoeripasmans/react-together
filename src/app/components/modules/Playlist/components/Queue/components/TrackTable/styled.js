@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Table = styled.table`
     width: 100%;
-    max-width: 70rem;
+    max-width: 77rem;
 `;
 
 export const Tr = styled.tr`
