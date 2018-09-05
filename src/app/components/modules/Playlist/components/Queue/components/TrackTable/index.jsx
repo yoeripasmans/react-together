@@ -12,7 +12,7 @@ const TrackTable = ({ tracks, mutateButtonType, tableMutateHandler }) => (
         <tbody>
             {tracks.map(track => (
                 <TrackRow
-                    key={track.url}
+                    key={track.uri}
                     track={track}
                     mutateButtonType={mutateButtonType}
                     tableMutateHandler={tableMutateHandler}

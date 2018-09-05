@@ -29,17 +29,18 @@ class Playlist extends Component {
     };
 
     render() {
-        const { loading, tracks } = this.props;
-
-        if (loading) {
+        const { loading, playlistData } = this.props;
+        // Show loader if loading is true or data is empty
+        if (loading || Object.keys(playlistData).length === 0) {
             return <ScLoader />;
         }
+        console.log(playlistData);
         return (
             <Fragment>
-                <PlaylistHeader />
-                <ActiveUsers />
+                <PlaylistHeader name={playlistData.name} createdBy={playlistData.createdBy} />
+                <ActiveUsers userData={playlistData.activeUsers} />
                 <Queue
-                    tracks={tracks}
+                    tracks={playlistData.tracks}
                     tableMutateHandler={this.removeTrackHandler}
                 />
                 <BackgroundImage />
@@ -51,14 +52,14 @@ class Playlist extends Component {
 Playlist.propTypes = {
     getTracks: PT.func.isRequired,
     loading: PT.bool,
-    tracks: PT.array,
+    playlistData: PT.object,
     tracksLoaded: PT.bool,
     removeTrack: PT.func,
 };
 
 export default connect(state => ({
     installation: state.playlist,
-    tracks: state.playlist.tracks,
+    playlistData: state.playlist.playlistData,
     loading: state.playlist.loading,
     tracksLoaded: state.playlist.tracksLoaded,
 }), { getTracks, resetItems, removeTrack })(Playlist);

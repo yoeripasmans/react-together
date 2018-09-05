@@ -1,0 +1,1798 @@
+{
+    "_id": {
+        "$oid": "5b3cdc5d1277d400141c1e61"
+    },
+    "users": [
+        {
+            "_id": {
+                "$oid": "5b2966f380099b001428140c"
+            },
+            "spotifyId": "1143830482",
+            "displayName": "Ramando Foster",
+            "country": "NL",
+            "username": "1143830482",
+            "email": "ramandofoster@live.nl",
+            "profilePic": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/18301005_922074927933347_6257960616243516027_n.jpg?_nc_cat=0&oh=38620f4b8bcb641156edb5938b54617a&oe=5B9DE02E",
+            "accessToken": "BQDRzXShP73hD8rUG_lEYfArd-NfY8w1ZYnq3xaKCyGDRjzRVNW4eOuqkpP34EhR8Ml5JgJ54rqGSjQdpcarwpqn4EMtnBZHW7QoHdbwo6F0TUL0ZEn0tZAfdGk1kpRDE5lm8IzAqGYL8rPjCeHv988E2iXrBBknqJS6-PRrMIQ7iGLTZrE85fLf9A",
+            "refreshToken": "AQCJOelx5Q1VAsQXtkpeExbpvlBFLB0PIxYcJVyICEF-NlJ92w8aBzMzpU68fK0G2jLHx2lidY_es6vZmvfAuXBQMs-sxk6xY8p2woU03wv1VoR5hvDDyhS4w2N5P9Fuy90",
+            "__v": 0
+        },
+        {
+            "_id": {
+                "$oid": "5b34d4ecc661300014ce6311"
+            },
+            "spotifyId": "rick712",
+            "displayName": null,
+            "country": "NL",
+            "username": "rick712",
+            "email": "rick.buter@gmail.com",
+            "profilePic": "https://profile-images.scdn.co/images/userprofile/default/8914049ab44dae7c95ce53d74f420fd60071d736",
+            "accessToken": "BQBoj1VR1QBMznGIzYSGpHtRmo04Cb4khBcHJ2PhBDTNCgFLWeUiyMiISt75aEYuwefO2lwXHvIexWgJ15GVygd55qyGKdvdHXDfeYD2vq68hwAt7fWeyLM0p88OnOkbMppvCtfkoy0FMF-3Z84mFH-cMPjWF6aJxns2CgQC_3a1pOVog10P-_iUyQ",
+            "refreshToken": "AQDvUwU6hMSPwXu_CgZN3COXdJmJAR9bvQ4wGyX276fflTY2JLN88yvWoGr8PJRP1jM8n2ubz4bKviYjPiK3Pw8kiLHNO_rohpf2X-EPVERXMRIGpIgOJnXSiH-InBYQ6uE",
+            "__v": 0
+        },
+        {
+            "_id": {
+                "$oid": "5b2e80321c19020014203504"
+            },
+            "spotifyId": "officialrayo",
+            "displayName": null,
+            "country": "NL",
+            "username": "officialrayo",
+            "email": "officialrayo@hotmail.com",
+            "profilePic": "https://profile-images.scdn.co/images/userprofile/default/d9f961b2dbefe77551ffdc082fada0d5144aa7c3",
+            "accessToken": "BQCiA00nC5PQicu453QNZGvhTnfQ2Q2LehGm_yLyBr2Vs01yPu58z6GnBzUZfq5gHr-0BrSRueEaUCTc5JmYMOgeJiA4dyRMP9cBksF4UNsQs43DUPiJK-CxL2y7GJ4POMPhoSdOCD7Bi9rHBgDDHbLG60Rdxg1NbP6wkiiGLGZmG2IW8P84D3AJ6sJB",
+            "refreshToken": "AQCTAFRturM_UFgJ7pV7a9lfVPlKlirBAQOLUks-378UNybvul8X6NkHDx9al6iy0B2mTCUaGAdhmX0sRAIuOnF2-SVGhnKPJ9R6VtfbXVcl0FAIkb-3FlXH9QYeDE6Nc7U",
+            "__v": 0
+        }
+    ],
+    "activeUsers": [
+        {
+            "_id": {
+                "$oid": "5b2966f380099b001428140c"
+            },
+            "spotifyId": "1143830482",
+            "displayName": "Ramando Foster",
+            "country": "NL",
+            "username": "1143830482",
+            "email": "ramandofoster@live.nl",
+            "profilePic": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/18301005_922074927933347_6257960616243516027_n.jpg?_nc_cat=0&oh=38620f4b8bcb641156edb5938b54617a&oe=5B9DE02E",
+            "accessToken": "BQDRzXShP73hD8rUG_lEYfArd-NfY8w1ZYnq3xaKCyGDRjzRVNW4eOuqkpP34EhR8Ml5JgJ54rqGSjQdpcarwpqn4EMtnBZHW7QoHdbwo6F0TUL0ZEn0tZAfdGk1kpRDE5lm8IzAqGYL8rPjCeHv988E2iXrBBknqJS6-PRrMIQ7iGLTZrE85fLf9A",
+            "refreshToken": "AQCJOelx5Q1VAsQXtkpeExbpvlBFLB0PIxYcJVyICEF-NlJ92w8aBzMzpU68fK0G2jLHx2lidY_es6vZmvfAuXBQMs-sxk6xY8p2woU03wv1VoR5hvDDyhS4w2N5P9Fuy90",
+            "__v": 0
+        },
+        {
+            "_id": {
+                "$oid": "5b34d4ecc661300014ce6311"
+            },
+            "spotifyId": "rick712",
+            "displayName": null,
+            "country": "NL",
+            "username": "rick712",
+            "email": "rick.buter@gmail.com",
+            "profilePic": "https://profile-images.scdn.co/images/userprofile/default/8914049ab44dae7c95ce53d74f420fd60071d736",
+            "accessToken": "BQBoj1VR1QBMznGIzYSGpHtRmo04Cb4khBcHJ2PhBDTNCgFLWeUiyMiISt75aEYuwefO2lwXHvIexWgJ15GVygd55qyGKdvdHXDfeYD2vq68hwAt7fWeyLM0p88OnOkbMppvCtfkoy0FMF-3Z84mFH-cMPjWF6aJxns2CgQC_3a1pOVog10P-_iUyQ",
+            "refreshToken": "AQDvUwU6hMSPwXu_CgZN3COXdJmJAR9bvQ4wGyX276fflTY2JLN88yvWoGr8PJRP1jM8n2ubz4bKviYjPiK3Pw8kiLHNO_rohpf2X-EPVERXMRIGpIgOJnXSiH-InBYQ6uE",
+            "__v": 0
+        },
+        {
+            "_id": {
+                "$oid": "5b2e80321c19020014203504"
+            },
+            "spotifyId": "officialrayo",
+            "displayName": null,
+            "country": "NL",
+            "username": "officialrayo",
+            "email": "officialrayo@hotmail.com",
+            "profilePic": "https://profile-images.scdn.co/images/userprofile/default/d9f961b2dbefe77551ffdc082fada0d5144aa7c3",
+            "accessToken": "BQCiA00nC5PQicu453QNZGvhTnfQ2Q2LehGm_yLyBr2Vs01yPu58z6GnBzUZfq5gHr-0BrSRueEaUCTc5JmYMOgeJiA4dyRMP9cBksF4UNsQs43DUPiJK-CxL2y7GJ4POMPhoSdOCD7Bi9rHBgDDHbLG60Rdxg1NbP6wkiiGLGZmG2IW8P84D3AJ6sJB",
+            "refreshToken": "AQCTAFRturM_UFgJ7pV7a9lfVPlKlirBAQOLUks-378UNybvul8X6NkHDx9al6iy0B2mTCUaGAdhmX0sRAIuOnF2-SVGhnKPJ9R6VtfbXVcl0FAIkb-3FlXH9QYeDE6Nc7U",
+            "__v": 0
+        }
+    ],
+    "admins": [
+        "officialrayo"
+    ],
+    "name": "GDA Awards Playlist",
+    "restricted": false,
+    "private": false,
+    "createdBy": {
+        "_id": {
+            "$oid": "5b2e80321c19020014203504"
+        },
+        "spotifyId": "officialrayo",
+        "displayName": null,
+        "country": "NL",
+        "username": "officialrayo",
+        "email": "officialrayo@hotmail.com",
+        "profilePic": "https://profile-images.scdn.co/images/userprofile/default/d9f961b2dbefe77551ffdc082fada0d5144aa7c3",
+        "accessToken": "BQBFqknOBZL3a8PRPqTt2uS19agEpJTt5YE40fPftrZ--MkqYifrTr3g4doK_hOSohS-Mk2BfOMAlTnpDxXSE3S7pGD8S4XHOKyUiCFSD74PDZFcxLnXLeJ9mYsjikENOECs2fEQUAGCIQB2dhj435EbR0gxZeS0G_qLHhTL4S1GUiA2mrDO_JDSY6_Impx5",
+        "refreshToken": "AQCTAFRturM_UFgJ7pV7a9lfVPlKlirBAQOLUks-378UNybvul8X6NkHDx9al6iy0B2mTCUaGAdhmX0sRAIuOnF2-SVGhnKPJ9R6VtfbXVcl0FAIkb-3FlXH9QYeDE6Nc7U",
+        "__v": 0
+    },
+    "qrCodeId": "bc9588aacbf1019e",
+    "isPlaying": false,
+    "tracks": [
+        {
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                    "id": "3TVXtAsR1Inumwj472S9r4",
+                    "name": "Drake",
+                    "type": "artist",
+                    "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                }
+            ],
+            "userLiked": [],
+            "_id": {
+                "$oid": "5b3ceeb8878e350014384903"
+            },
+            "id": "1Jrj3k5L36dPkU6KAclU7g",
+            "uri": "spotify:track:1Jrj3k5L36dPkU6KAclU7g",
+            "name": "Blue Tint",
+            "album": {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                        "id": "3TVXtAsR1Inumwj472S9r4",
+                        "name": "Drake",
+                        "type": "artist",
+                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/2o9McLtDM7mbODV7yZF2mc"
+                },
+                "href": "https://api.spotify.com/v1/albums/2o9McLtDM7mbODV7yZF2mc",
+                "id": "2o9McLtDM7mbODV7yZF2mc",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/542d705154be4049fc927050d006987e63739bbd",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/239ec906572231368d8ebd72614094bd3bd10b33",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/f12257240bbec6ddfa780253ac939e646eba2a36",
+                        "width": 64
+                    }
+                ],
+                "name": "Scorpion",
+                "release_date": "2018-06-29",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:2o9McLtDM7mbODV7yZF2mc"
+            },
+            "duration_ms": 162800,
+            "likes": 0,
+            "addedBy": {
+                "_id": {
+                    "$oid": "5b2966f380099b001428140c"
+                },
+                "spotifyId": "1143830482",
+                "displayName": "Ramando Foster",
+                "country": "NL",
+                "username": "1143830482",
+                "email": "ramandofoster@live.nl",
+                "profilePic": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/18301005_922074927933347_6257960616243516027_n.jpg?_nc_cat=0&oh=38620f4b8bcb641156edb5938b54617a&oe=5B9DE02E",
+                "accessToken": "BQDfs8vuHfXlrXsCDk5akF26dnJMBA_O1XaMpJyW_6mWrDbt21Sl6am-KCp0hMD9XFEca9xtghMxBCTIsl8YcbvHCwALk1LBfpNSM1OW5fg5sm2sO0gq9q16oCfco6r8z8fbXjGO4Od2RNAnZOPAibQxnbh-C41XTl3WHFnd_WFv2SLKACCi7ca4-A",
+                "refreshToken": "AQCJOelx5Q1VAsQXtkpeExbpvlBFLB0PIxYcJVyICEF-NlJ92w8aBzMzpU68fK0G2jLHx2lidY_es6vZmvfAuXBQMs-sxk6xY8p2woU03wv1VoR5hvDDyhS4w2N5P9Fuy90",
+                "__v": 0
+            },
+            "isPlaying": true,
+            "updatedAt": {
+                "$date": "2018-07-04T17:08:27.388Z"
+            },
+            "createdAt": {
+                "$date": "2018-07-04T16:20:53.076Z"
+            }
+        },
+        {
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/4nDoRrQiYLoBzwC5BhVJzF"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/4nDoRrQiYLoBzwC5BhVJzF",
+                    "id": "4nDoRrQiYLoBzwC5BhVJzF",
+                    "name": "Camila Cabello",
+                    "type": "artist",
+                    "uri": "spotify:artist:4nDoRrQiYLoBzwC5BhVJzF"
+                },
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/50co4Is1HCEo8bhOyUWKpn",
+                    "id": "50co4Is1HCEo8bhOyUWKpn",
+                    "name": "Young Thug",
+                    "type": "artist",
+                    "uri": "spotify:artist:50co4Is1HCEo8bhOyUWKpn"
+                }
+            ],
+            "userLiked": [
+                "llaurenss1"
+            ],
+            "_id": {
+                "$oid": "5b3cf552878e350014384923"
+            },
+            "id": "1rfofaqEpACxVEHIZBJe6W",
+            "uri": "spotify:track:1rfofaqEpACxVEHIZBJe6W",
+            "name": "Havana",
+            "album": {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/4nDoRrQiYLoBzwC5BhVJzF"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/4nDoRrQiYLoBzwC5BhVJzF",
+                        "id": "4nDoRrQiYLoBzwC5BhVJzF",
+                        "name": "Camila Cabello",
+                        "type": "artist",
+                        "uri": "spotify:artist:4nDoRrQiYLoBzwC5BhVJzF"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/2vD3zSQr8hNlg0obNel4TE"
+                },
+                "href": "https://api.spotify.com/v1/albums/2vD3zSQr8hNlg0obNel4TE",
+                "id": "2vD3zSQr8hNlg0obNel4TE",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/8ebf0216fa9d294177e79cfef03628ed68043454",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ac7215afbceb58c8a7f3713eaf9d00ff3d959779",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/014f38920ba75a4efd3488b4626cf6e16f94c9e5",
+                        "width": 64
+                    }
+                ],
+                "name": "Camila",
+                "release_date": "2018-01-12",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:2vD3zSQr8hNlg0obNel4TE"
+            },
+            "duration_ms": 217306,
+            "likes": 1,
+            "addedBy": {
+                "_id": {
+                    "$oid": "5b2966f380099b001428140c"
+                },
+                "spotifyId": "1143830482",
+                "displayName": "Ramando Foster",
+                "country": "NL",
+                "username": "1143830482",
+                "email": "ramandofoster@live.nl",
+                "profilePic": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/18301005_922074927933347_6257960616243516027_n.jpg?_nc_cat=0&oh=38620f4b8bcb641156edb5938b54617a&oe=5B9DE02E",
+                "accessToken": "BQDfs8vuHfXlrXsCDk5akF26dnJMBA_O1XaMpJyW_6mWrDbt21Sl6am-KCp0hMD9XFEca9xtghMxBCTIsl8YcbvHCwALk1LBfpNSM1OW5fg5sm2sO0gq9q16oCfco6r8z8fbXjGO4Od2RNAnZOPAibQxnbh-C41XTl3WHFnd_WFv2SLKACCi7ca4-A",
+                "refreshToken": "AQCJOelx5Q1VAsQXtkpeExbpvlBFLB0PIxYcJVyICEF-NlJ92w8aBzMzpU68fK0G2jLHx2lidY_es6vZmvfAuXBQMs-sxk6xY8p2woU03wv1VoR5hvDDyhS4w2N5P9Fuy90",
+                "__v": 0
+            },
+            "isPlaying": false,
+            "updatedAt": {
+                "$date": "2018-07-04T16:26:58.753Z"
+            },
+            "createdAt": {
+                "$date": "2018-07-04T16:26:58.753Z"
+            }
+        },
+        {
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/1LcSPWD8r1Gxv2oQ4CM3C9"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/1LcSPWD8r1Gxv2oQ4CM3C9",
+                    "id": "1LcSPWD8r1Gxv2oQ4CM3C9",
+                    "name": "Danny Espinal",
+                    "type": "artist",
+                    "uri": "spotify:artist:1LcSPWD8r1Gxv2oQ4CM3C9"
+                }
+            ],
+            "userLiked": [
+                "1143830482",
+                "1130105318"
+            ],
+            "_id": {
+                "$oid": "5b3cf4d3878e35001438491c"
+            },
+            "id": "0m0BHn8qShTPlsO4WcKsMb",
+            "uri": "spotify:track:0m0BHn8qShTPlsO4WcKsMb",
+            "name": "Back II Life",
+            "album": {
+                "album_type": "single",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/1LcSPWD8r1Gxv2oQ4CM3C9"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/1LcSPWD8r1Gxv2oQ4CM3C9",
+                        "id": "1LcSPWD8r1Gxv2oQ4CM3C9",
+                        "name": "Danny Espinal",
+                        "type": "artist",
+                        "uri": "spotify:artist:1LcSPWD8r1Gxv2oQ4CM3C9"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/1GoC67skxAjrfvIA8KTHSB"
+                },
+                "href": "https://api.spotify.com/v1/albums/1GoC67skxAjrfvIA8KTHSB",
+                "id": "1GoC67skxAjrfvIA8KTHSB",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/548770404b77239b89e67a36dc508de9a7f96b0e",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/a6780e883fcb4ff419602571d39cf9be4581ddc2",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/758aa4fe10b1ba27c4c4e22e25515d366a6e4998",
+                        "width": 64
+                    }
+                ],
+                "name": "Back II Life",
+                "release_date": "2017-01-09",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:1GoC67skxAjrfvIA8KTHSB"
+            },
+            "duration_ms": 318720,
+            "likes": 1,
+            "addedBy": {
+                "_id": {
+                    "$oid": "5b2e80321c19020014203504"
+                },
+                "spotifyId": "officialrayo",
+                "displayName": null,
+                "country": "NL",
+                "username": "officialrayo",
+                "email": "officialrayo@hotmail.com",
+                "profilePic": "https://profile-images.scdn.co/images/userprofile/default/d9f961b2dbefe77551ffdc082fada0d5144aa7c3",
+                "accessToken": "BQDWSlI9fQHCt9ofJvZ_O10xgW4YhvmBrw_dEWRjTqmlv55gzhqvc4yvtQcy8rf_yIqgJLjYJHcHGqKrIwQ6h0ZI3n3TK2kOXWY7deNDoDeWORwq4QT5M485MJwp54lx1Z_UNSmIHXSV_rRyIlIvrFQFMvyeurHBKsKR_AXa_ViVa7OQWfJXWwiWEt41fcGH",
+                "refreshToken": "AQCTAFRturM_UFgJ7pV7a9lfVPlKlirBAQOLUks-378UNybvul8X6NkHDx9al6iy0B2mTCUaGAdhmX0sRAIuOnF2-SVGhnKPJ9R6VtfbXVcl0FAIkb-3FlXH9QYeDE6Nc7U",
+                "__v": 0
+            },
+            "isPlaying": false,
+            "updatedAt": {
+                "$date": "2018-07-04T16:31:08.709Z"
+            },
+            "createdAt": {
+                "$date": "2018-07-04T16:31:08.697Z"
+            }
+        },
+        {
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/360IAlyVv4PCEVjgyMZrxK"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/360IAlyVv4PCEVjgyMZrxK",
+                    "id": "360IAlyVv4PCEVjgyMZrxK",
+                    "name": "Miguel",
+                    "type": "artist",
+                    "uri": "spotify:artist:360IAlyVv4PCEVjgyMZrxK"
+                },
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/0Y5tJX1MQlPlqiwlOH1tJY",
+                    "id": "0Y5tJX1MQlPlqiwlOH1tJY",
+                    "name": "Travis Scott",
+                    "type": "artist",
+                    "uri": "spotify:artist:0Y5tJX1MQlPlqiwlOH1tJY"
+                }
+            ],
+            "userLiked": [
+                "llaurenss1"
+            ],
+            "_id": {
+                "$oid": "5b3cf173878e350014384911"
+            },
+            "id": "5WoaF1B5XIEnWfmb5NZikf",
+            "uri": "spotify:track:5WoaF1B5XIEnWfmb5NZikf",
+            "name": "Sky Walker",
+            "album": {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/360IAlyVv4PCEVjgyMZrxK"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/360IAlyVv4PCEVjgyMZrxK",
+                        "id": "360IAlyVv4PCEVjgyMZrxK",
+                        "name": "Miguel",
+                        "type": "artist",
+                        "uri": "spotify:artist:360IAlyVv4PCEVjgyMZrxK"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/05LEST8E8mkEIl2LRfUkcI"
+                },
+                "href": "https://api.spotify.com/v1/albums/05LEST8E8mkEIl2LRfUkcI",
+                "id": "05LEST8E8mkEIl2LRfUkcI",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/2cd29bcaee7d0defb3293cf8c546070222c61d6f",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab501873fbf2500af9f4094f165cece8a3f178c1",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ea8f2721de78df42a75b8ed545cacf6dbf0a4ea4",
+                        "width": 64
+                    }
+                ],
+                "name": "War & Leisure",
+                "release_date": "2017-12-01",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:05LEST8E8mkEIl2LRfUkcI"
+            },
+            "duration_ms": 259333,
+            "likes": 1,
+            "addedBy": {
+                "_id": {
+                    "$oid": "5b2e80321c19020014203504"
+                },
+                "spotifyId": "officialrayo",
+                "displayName": null,
+                "country": "NL",
+                "username": "officialrayo",
+                "email": "officialrayo@hotmail.com",
+                "profilePic": "https://profile-images.scdn.co/images/userprofile/default/d9f961b2dbefe77551ffdc082fada0d5144aa7c3",
+                "accessToken": "BQDWSlI9fQHCt9ofJvZ_O10xgW4YhvmBrw_dEWRjTqmlv55gzhqvc4yvtQcy8rf_yIqgJLjYJHcHGqKrIwQ6h0ZI3n3TK2kOXWY7deNDoDeWORwq4QT5M485MJwp54lx1Z_UNSmIHXSV_rRyIlIvrFQFMvyeurHBKsKR_AXa_ViVa7OQWfJXWwiWEt41fcGH",
+                "refreshToken": "AQCTAFRturM_UFgJ7pV7a9lfVPlKlirBAQOLUks-378UNybvul8X6NkHDx9al6iy0B2mTCUaGAdhmX0sRAIuOnF2-SVGhnKPJ9R6VtfbXVcl0FAIkb-3FlXH9QYeDE6Nc7U",
+                "__v": 0
+            },
+            "isPlaying": false,
+            "updatedAt": {
+                "$date": "2018-07-04T16:51:37.190Z"
+            },
+            "createdAt": {
+                "$date": "2018-07-04T16:51:37.185Z"
+            }
+        },
+        {
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/3Mqc08k9T6zFIaRugL0lRA"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/3Mqc08k9T6zFIaRugL0lRA",
+                    "id": "3Mqc08k9T6zFIaRugL0lRA",
+                    "name": "Dry Ice",
+                    "type": "artist",
+                    "uri": "spotify:artist:3Mqc08k9T6zFIaRugL0lRA"
+                }
+            ],
+            "userLiked": [],
+            "_id": {
+                "$oid": "5b3cf52b878e350014384921"
+            },
+            "id": "4GfbIB1BQOtqy8MgWN1m6d",
+            "uri": "spotify:track:4GfbIB1BQOtqy8MgWN1m6d",
+            "name": "Allan Walker",
+            "album": {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3Mqc08k9T6zFIaRugL0lRA"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3Mqc08k9T6zFIaRugL0lRA",
+                        "id": "3Mqc08k9T6zFIaRugL0lRA",
+                        "name": "Dry Ice",
+                        "type": "artist",
+                        "uri": "spotify:artist:3Mqc08k9T6zFIaRugL0lRA"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/1rQwiA7Zl5TNiQA6VtVO4W"
+                },
+                "href": "https://api.spotify.com/v1/albums/1rQwiA7Zl5TNiQA6VtVO4W",
+                "id": "1rQwiA7Zl5TNiQA6VtVO4W",
+                "images": [
+                    {
+                        "height": 600,
+                        "url": "https://i.scdn.co/image/bb64f0a43f8fef75809f28257543df1c8a0aa139",
+                        "width": 600
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/900db3c198e43b52bf1075d8a7f9e353c65780c8",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/3796bed7ee0b3303124a97f3dc210858701a9b82",
+                        "width": 64
+                    }
+                ],
+                "name": "Celsius",
+                "release_date": "2011-02-06",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:1rQwiA7Zl5TNiQA6VtVO4W"
+            },
+            "duration_ms": 281835,
+            "likes": 0,
+            "addedBy": {
+                "_id": {
+                    "$oid": "5b2966f380099b001428140c"
+                },
+                "spotifyId": "1143830482",
+                "displayName": "Ramando Foster",
+                "country": "NL",
+                "username": "1143830482",
+                "email": "ramandofoster@live.nl",
+                "profilePic": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/18301005_922074927933347_6257960616243516027_n.jpg?_nc_cat=0&oh=38620f4b8bcb641156edb5938b54617a&oe=5B9DE02E",
+                "accessToken": "BQDfs8vuHfXlrXsCDk5akF26dnJMBA_O1XaMpJyW_6mWrDbt21Sl6am-KCp0hMD9XFEca9xtghMxBCTIsl8YcbvHCwALk1LBfpNSM1OW5fg5sm2sO0gq9q16oCfco6r8z8fbXjGO4Od2RNAnZOPAibQxnbh-C41XTl3WHFnd_WFv2SLKACCi7ca4-A",
+                "refreshToken": "AQCJOelx5Q1VAsQXtkpeExbpvlBFLB0PIxYcJVyICEF-NlJ92w8aBzMzpU68fK0G2jLHx2lidY_es6vZmvfAuXBQMs-sxk6xY8p2woU03wv1VoR5hvDDyhS4w2N5P9Fuy90",
+                "__v": 0
+            },
+            "isPlaying": false,
+            "updatedAt": {
+                "$date": "2018-07-04T16:26:19.679Z"
+            },
+            "createdAt": {
+                "$date": "2018-07-04T16:26:19.679Z"
+            }
+        },
+        {
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+                    "id": "09hVIj6vWgoCDtT03h8ZCa",
+                    "name": "A Tribe Called Quest",
+                    "type": "artist",
+                    "uri": "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+                },
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/47PW7jNEh3qCVQWq4rsrmP"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/47PW7jNEh3qCVQWq4rsrmP",
+                    "id": "47PW7jNEh3qCVQWq4rsrmP",
+                    "name": "Tammy Lucas",
+                    "type": "artist",
+                    "uri": "spotify:artist:47PW7jNEh3qCVQWq4rsrmP"
+                }
+            ],
+            "userLiked": [],
+            "_id": {
+                "$oid": "5b3ce0955a5e600014023c1f"
+            },
+            "id": "2uWMj52ImAeeGQFJmVlU5H",
+            "uri": "spotify:track:2uWMj52ImAeeGQFJmVlU5H",
+            "name": "1nce Again - Radio Version",
+            "album": {
+                "album_type": "ALBUM",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+                        "id": "09hVIj6vWgoCDtT03h8ZCa",
+                        "name": "A Tribe Called Quest",
+                        "type": "artist",
+                        "uri": "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+                    }
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/0EguP4tsJurU5I8ocCxdyb"
+                },
+                "href": "https://api.spotify.com/v1/albums/0EguP4tsJurU5I8ocCxdyb",
+                "id": "0EguP4tsJurU5I8ocCxdyb",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/8c0be0f59092ffc0018cbd7f21d31c0e1c6b23ed",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/991827f3b0bfe1c135bfa21fcaeef74d13c14b80",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ffcbdcd4db494e35c87cea2b6e73f8e1c4407644",
+                        "width": 64
+                    }
+                ],
+                "name": "Beats, Rhymes & Life",
+                "release_date": "1996-07-15",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:0EguP4tsJurU5I8ocCxdyb"
+            },
+            "duration_ms": 229226,
+            "likes": 0,
+            "addedBy": {
+                "_id": {
+                    "$oid": "5b2e80321c19020014203504"
+                },
+                "spotifyId": "officialrayo",
+                "displayName": null,
+                "country": "NL",
+                "username": "officialrayo",
+                "email": "officialrayo@hotmail.com",
+                "profilePic": "https://profile-images.scdn.co/images/userprofile/default/d9f961b2dbefe77551ffdc082fada0d5144aa7c3",
+                "accessToken": "BQBFqknOBZL3a8PRPqTt2uS19agEpJTt5YE40fPftrZ--MkqYifrTr3g4doK_hOSohS-Mk2BfOMAlTnpDxXSE3S7pGD8S4XHOKyUiCFSD74PDZFcxLnXLeJ9mYsjikENOECs2fEQUAGCIQB2dhj435EbR0gxZeS0G_qLHhTL4S1GUiA2mrDO_JDSY6_Impx5",
+                "refreshToken": "AQCTAFRturM_UFgJ7pV7a9lfVPlKlirBAQOLUks-378UNybvul8X6NkHDx9al6iy0B2mTCUaGAdhmX0sRAIuOnF2-SVGhnKPJ9R6VtfbXVcl0FAIkb-3FlXH9QYeDE6Nc7U",
+                "__v": 0
+            },
+            "isPlaying": false,
+            "updatedAt": {
+                "$date": "2018-07-04T16:55:26.717Z"
+            },
+            "createdAt": {
+                "$date": "2018-07-04T16:55:26.713Z"
+            }
+        },
+        {
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/15UsOTVnJzReFVN1VCnxy4"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/15UsOTVnJzReFVN1VCnxy4",
+                    "id": "15UsOTVnJzReFVN1VCnxy4",
+                    "name": "XXXTENTACION",
+                    "type": "artist",
+                    "uri": "spotify:artist:15UsOTVnJzReFVN1VCnxy4"
+                }
+            ],
+            "userLiked": [],
+            "_id": {
+                "$oid": "5b3ce0bb5a5e600014023c4b"
+            },
+            "id": "3ee8Jmje8o58CHK66QrVC2",
+            "uri": "spotify:track:3ee8Jmje8o58CHK66QrVC2",
+            "name": "SAD!",
+            "album": {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/15UsOTVnJzReFVN1VCnxy4"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/15UsOTVnJzReFVN1VCnxy4",
+                        "id": "15UsOTVnJzReFVN1VCnxy4",
+                        "name": "XXXTENTACION",
+                        "type": "artist",
+                        "uri": "spotify:artist:15UsOTVnJzReFVN1VCnxy4"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/2Ti79nwTsont5ZHfdxIzAm"
+                },
+                "href": "https://api.spotify.com/v1/albums/2Ti79nwTsont5ZHfdxIzAm",
+                "id": "2Ti79nwTsont5ZHfdxIzAm",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/2e70e7b198acc3bb03aaba9424c5fb23fb38c536",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/4b180600c11e3c89c8b16d6aea3590a5cbfdaea9",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/6924e7074859f79464dd8ddf48455c181df4ce1b",
+                        "width": 64
+                    }
+                ],
+                "name": "?",
+                "release_date": "2018-03-16",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:2Ti79nwTsont5ZHfdxIzAm"
+            },
+            "duration_ms": 166605,
+            "likes": 0,
+            "addedBy": {
+                "_id": {
+                    "$oid": "5b2e80321c19020014203504"
+                },
+                "spotifyId": "officialrayo",
+                "displayName": null,
+                "country": "NL",
+                "username": "officialrayo",
+                "email": "officialrayo@hotmail.com",
+                "profilePic": "https://profile-images.scdn.co/images/userprofile/default/d9f961b2dbefe77551ffdc082fada0d5144aa7c3",
+                "accessToken": "BQBFqknOBZL3a8PRPqTt2uS19agEpJTt5YE40fPftrZ--MkqYifrTr3g4doK_hOSohS-Mk2BfOMAlTnpDxXSE3S7pGD8S4XHOKyUiCFSD74PDZFcxLnXLeJ9mYsjikENOECs2fEQUAGCIQB2dhj435EbR0gxZeS0G_qLHhTL4S1GUiA2mrDO_JDSY6_Impx5",
+                "refreshToken": "AQCTAFRturM_UFgJ7pV7a9lfVPlKlirBAQOLUks-378UNybvul8X6NkHDx9al6iy0B2mTCUaGAdhmX0sRAIuOnF2-SVGhnKPJ9R6VtfbXVcl0FAIkb-3FlXH9QYeDE6Nc7U",
+                "__v": 0
+            },
+            "isPlaying": false,
+            "updatedAt": {
+                "$date": "2018-07-04T16:58:13.601Z"
+            },
+            "createdAt": {
+                "$date": "2018-07-04T16:58:13.596Z"
+            }
+        },
+        {
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                    "id": "3TVXtAsR1Inumwj472S9r4",
+                    "name": "Drake",
+                    "type": "artist",
+                    "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                }
+            ],
+            "userLiked": [],
+            "_id": {
+                "$oid": "5b3ce6f25a5e600014023c6c"
+            },
+            "id": "2VWbHHhWnMzKWPUs4IEEW9",
+            "uri": "spotify:track:2VWbHHhWnMzKWPUs4IEEW9",
+            "name": "God's Plan",
+            "album": {
+                "album_type": "ALBUM",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                        "id": "3TVXtAsR1Inumwj472S9r4",
+                        "name": "Drake",
+                        "type": "artist",
+                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                    }
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/2o9McLtDM7mbODV7yZF2mc"
+                },
+                "href": "https://api.spotify.com/v1/albums/2o9McLtDM7mbODV7yZF2mc",
+                "id": "2o9McLtDM7mbODV7yZF2mc",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/542d705154be4049fc927050d006987e63739bbd",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/239ec906572231368d8ebd72614094bd3bd10b33",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/f12257240bbec6ddfa780253ac939e646eba2a36",
+                        "width": 64
+                    }
+                ],
+                "name": "Scorpion",
+                "release_date": "2018-06-29",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:2o9McLtDM7mbODV7yZF2mc"
+            },
+            "duration_ms": 198973,
+            "likes": 0,
+            "addedBy": {
+                "_id": {
+                    "$oid": "5b2e80321c19020014203504"
+                },
+                "spotifyId": "officialrayo",
+                "displayName": null,
+                "country": "NL",
+                "username": "officialrayo",
+                "email": "officialrayo@hotmail.com",
+                "profilePic": "https://profile-images.scdn.co/images/userprofile/default/d9f961b2dbefe77551ffdc082fada0d5144aa7c3",
+                "accessToken": "BQBFqknOBZL3a8PRPqTt2uS19agEpJTt5YE40fPftrZ--MkqYifrTr3g4doK_hOSohS-Mk2BfOMAlTnpDxXSE3S7pGD8S4XHOKyUiCFSD74PDZFcxLnXLeJ9mYsjikENOECs2fEQUAGCIQB2dhj435EbR0gxZeS0G_qLHhTL4S1GUiA2mrDO_JDSY6_Impx5",
+                "refreshToken": "AQCTAFRturM_UFgJ7pV7a9lfVPlKlirBAQOLUks-378UNybvul8X6NkHDx9al6iy0B2mTCUaGAdhmX0sRAIuOnF2-SVGhnKPJ9R6VtfbXVcl0FAIkb-3FlXH9QYeDE6Nc7U",
+                "__v": 0
+            },
+            "isPlaying": false,
+            "updatedAt": {
+                "$date": "2018-07-04T17:01:32.887Z"
+            },
+            "createdAt": {
+                "$date": "2018-07-04T17:01:32.883Z"
+            }
+        },
+        {
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                    "id": "3TVXtAsR1Inumwj472S9r4",
+                    "name": "Drake",
+                    "type": "artist",
+                    "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                }
+            ],
+            "userLiked": [
+                "1143830482"
+            ],
+            "_id": {
+                "$oid": "5b3cfcde878e350014384930"
+            },
+            "id": "7txPE73wHbuXYkM1h8zNrG",
+            "uri": "spotify:track:7txPE73wHbuXYkM1h8zNrG",
+            "name": "Mob Ties",
+            "album": {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                        "id": "3TVXtAsR1Inumwj472S9r4",
+                        "name": "Drake",
+                        "type": "artist",
+                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/2o9McLtDM7mbODV7yZF2mc"
+                },
+                "href": "https://api.spotify.com/v1/albums/2o9McLtDM7mbODV7yZF2mc",
+                "id": "2o9McLtDM7mbODV7yZF2mc",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/542d705154be4049fc927050d006987e63739bbd",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/239ec906572231368d8ebd72614094bd3bd10b33",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/f12257240bbec6ddfa780253ac939e646eba2a36",
+                        "width": 64
+                    }
+                ],
+                "name": "Scorpion",
+                "release_date": "2018-06-29",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:2o9McLtDM7mbODV7yZF2mc"
+            },
+            "duration_ms": 205146,
+            "likes": 0,
+            "addedBy": {
+                "_id": {
+                    "$oid": "5b2e80321c19020014203504"
+                },
+                "spotifyId": "officialrayo",
+                "displayName": null,
+                "country": "NL",
+                "username": "officialrayo",
+                "email": "officialrayo@hotmail.com",
+                "profilePic": "https://profile-images.scdn.co/images/userprofile/default/d9f961b2dbefe77551ffdc082fada0d5144aa7c3",
+                "accessToken": "BQB-7xUmrzJz7rQtGp5k14PPJcew9ULO9ybR8VQsHNV2cN0haZIXCjGkIkHXXiF3SsLHZ7A-6LSYUkjnzCQP2r7PdEC4x68Lb9j5xcQGCenTOOpIjptVPe1LRqfyuoBgy_4X8WYMBMqcbiRwbpF63auh0L6qjyxZ3ooX1tiF6jSkAHge-Y45eDWG6HR0IuJh",
+                "refreshToken": "AQCTAFRturM_UFgJ7pV7a9lfVPlKlirBAQOLUks-378UNybvul8X6NkHDx9al6iy0B2mTCUaGAdhmX0sRAIuOnF2-SVGhnKPJ9R6VtfbXVcl0FAIkb-3FlXH9QYeDE6Nc7U",
+                "__v": 0
+            },
+            "isPlaying": false,
+            "updatedAt": {
+                "$date": "2018-07-04T17:04:58.315Z"
+            },
+            "createdAt": {
+                "$date": "2018-07-04T17:04:58.308Z"
+            }
+        },
+        {
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
+                    "id": "2YZyLoL8N0Wb9xBt1NhZWg",
+                    "name": "Kendrick Lamar",
+                    "type": "artist",
+                    "uri": "spotify:artist:2YZyLoL8N0Wb9xBt1NhZWg"
+                }
+            ],
+            "userLiked": [],
+            "_id": {
+                "$oid": "5b3cee44878e3500143848ff"
+            },
+            "id": "1EaKU4dMbesXXd3BrLCtYG",
+            "uri": "spotify:track:1EaKU4dMbesXXd3BrLCtYG",
+            "name": "ELEMENT.",
+            "album": {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
+                        "id": "2YZyLoL8N0Wb9xBt1NhZWg",
+                        "name": "Kendrick Lamar",
+                        "type": "artist",
+                        "uri": "spotify:artist:2YZyLoL8N0Wb9xBt1NhZWg"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/4eLPsYPBmXABThSJ821sqY"
+                },
+                "href": "https://api.spotify.com/v1/albums/4eLPsYPBmXABThSJ821sqY",
+                "id": "4eLPsYPBmXABThSJ821sqY",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/661e1a935e2eacdd45c05ef618565535e7bed2ad",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/70429aaeceb7f8f6c087133382728223e0004b29",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/f2e751ee3dbfec80737094585f59a76806a51797",
+                        "width": 64
+                    }
+                ],
+                "name": "DAMN.",
+                "release_date": "2017-04-14",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:4eLPsYPBmXABThSJ821sqY"
+            },
+            "duration_ms": 208733,
+            "likes": 0,
+            "addedBy": {
+                "_id": {
+                    "$oid": "5b2e80321c19020014203504"
+                },
+                "spotifyId": "officialrayo",
+                "displayName": null,
+                "country": "NL",
+                "username": "officialrayo",
+                "email": "officialrayo@hotmail.com",
+                "profilePic": "https://profile-images.scdn.co/images/userprofile/default/d9f961b2dbefe77551ffdc082fada0d5144aa7c3",
+                "accessToken": "BQDWSlI9fQHCt9ofJvZ_O10xgW4YhvmBrw_dEWRjTqmlv55gzhqvc4yvtQcy8rf_yIqgJLjYJHcHGqKrIwQ6h0ZI3n3TK2kOXWY7deNDoDeWORwq4QT5M485MJwp54lx1Z_UNSmIHXSV_rRyIlIvrFQFMvyeurHBKsKR_AXa_ViVa7OQWfJXWwiWEt41fcGH",
+                "refreshToken": "AQCTAFRturM_UFgJ7pV7a9lfVPlKlirBAQOLUks-378UNybvul8X6NkHDx9al6iy0B2mTCUaGAdhmX0sRAIuOnF2-SVGhnKPJ9R6VtfbXVcl0FAIkb-3FlXH9QYeDE6Nc7U",
+                "__v": 0
+            },
+            "isPlaying": false,
+            "updatedAt": {
+                "$date": "2018-07-04T17:08:27.335Z"
+            },
+            "createdAt": {
+                "$date": "2018-07-04T17:08:27.323Z"
+            }
+        },
+        {
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                    "id": "3TVXtAsR1Inumwj472S9r4",
+                    "name": "Drake",
+                    "type": "artist",
+                    "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                }
+            ],
+            "userLiked": [],
+            "_id": {
+                "$oid": "5b8801e2a45af60014094384"
+            },
+            "id": "7rC5Pl8rQSX4myONQHYPBK",
+            "uri": "spotify:track:7rC5Pl8rQSX4myONQHYPBK",
+            "name": "Mob Ties",
+            "album": {
+                "album_type": "ALBUM",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                        "id": "3TVXtAsR1Inumwj472S9r4",
+                        "name": "Drake",
+                        "type": "artist",
+                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                    }
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/1ATL5GLyefJaxhQzSPVrLX"
+                },
+                "href": "https://api.spotify.com/v1/albums/1ATL5GLyefJaxhQzSPVrLX",
+                "id": "1ATL5GLyefJaxhQzSPVrLX",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/542d705154be4049fc927050d006987e63739bbd",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/239ec906572231368d8ebd72614094bd3bd10b33",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/f12257240bbec6ddfa780253ac939e646eba2a36",
+                        "width": 64
+                    }
+                ],
+                "name": "Scorpion",
+                "release_date": "2018-06-29",
+                "release_date_precision": "day",
+                "type": "album",
+                "uri": "spotify:album:1ATL5GLyefJaxhQzSPVrLX"
+            },
+            "duration_ms": 205146,
+            "likes": 0,
+            "addedBy": {
+                "_id": {
+                    "$oid": "5b2e80321c19020014203504"
+                },
+                "spotifyId": "officialrayo",
+                "displayName": null,
+                "country": "NL",
+                "username": "officialrayo",
+                "email": "officialrayo@hotmail.com",
+                "profilePic": "https://profile-images.scdn.co/images/userprofile/default/d9f961b2dbefe77551ffdc082fada0d5144aa7c3",
+                "accessToken": "BQB8zDw8MP-hTQy9bvlwQynxBGa0NTGDhkozMotL51lEe2Caa7dvgeiGsz9rxiGnlEuwh_DNyc9Dls1ZZLsVmDFtXGuqrDu0UUux70rGI7aZpLY7TeoRoHdXSuhYQY-bGDTxrbw2Cnbdjr0Pv_lp9TQE5Y8_JTBrqAz_SFXCU0ssVEPhFCzxy3a3QqIGb3zy",
+                "refreshToken": "AQCTAFRturM_UFgJ7pV7a9lfVPlKlirBAQOLUks-378UNybvul8X6NkHDx9al6iy0B2mTCUaGAdhmX0sRAIuOnF2-SVGhnKPJ9R6VtfbXVcl0FAIkb-3FlXH9QYeDE6Nc7U",
+                "__v": 0
+            },
+            "isPlaying": false,
+            "updatedAt": {
+                "$date": "2018-08-30T14:40:34.544Z"
+            },
+            "createdAt": {
+                "$date": "2018-08-30T14:40:34.544Z"
+            }
+        },
+        {
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/1ZwdS5xdxEREPySFridCfh"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/1ZwdS5xdxEREPySFridCfh",
+                    "id": "1ZwdS5xdxEREPySFridCfh",
+                    "name": "2Pac",
+                    "type": "artist",
+                    "uri": "spotify:artist:1ZwdS5xdxEREPySFridCfh"
+                }
+            ],
+            "userLiked": [],
+            "_id": {
+                "$oid": "5b8e2f557e2cfb0014132dcb"
+            },
+            "id": "3ssX20QT5c3nA9wk78V1LQ",
+            "uri": "spotify:track:3ssX20QT5c3nA9wk78V1LQ",
+            "name": "Ambitionz Az A Ridah",
+            "album": {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/1ZwdS5xdxEREPySFridCfh"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/1ZwdS5xdxEREPySFridCfh",
+                        "id": "1ZwdS5xdxEREPySFridCfh",
+                        "name": "2Pac",
+                        "type": "artist",
+                        "uri": "spotify:artist:1ZwdS5xdxEREPySFridCfh"
+                    }
+                ],
+                "available_markets": [
+                    "AD",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "BE",
+                    "BG",
+                    "BO",
+                    "BR",
+                    "CA",
+                    "CH",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MT",
+                    "MX",
+                    "MY",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "PY",
+                    "RO",
+                    "SE",
+                    "SG",
+                    "SK",
+                    "SV",
+                    "TH",
+                    "TR",
+                    "TW",
+                    "US",
+                    "UY",
+                    "VN",
+                    "ZA"
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/4CzT5ueFBRpbILw34HQYxi"
+                },
+                "href": "https://api.spotify.com/v1/albums/4CzT5ueFBRpbILw34HQYxi",
+                "id": "4CzT5ueFBRpbILw34HQYxi",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/d311ca24c89d533d205e366b6e8dc0327d465716",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/cb7894566ded4f86a046c2ff2d81c16b0f34be53",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/de22d410ff2d7c4101e862ee007089e15a00417b",
+                        "width": 64
+                    }
+                ],
+                "name": "All Eyez On Me",
+                "release_date": "1996",
+                "release_date_precision": "year",
+                "total_tracks": 27,
+                "type": "album",
+                "uri": "spotify:album:4CzT5ueFBRpbILw34HQYxi"
+            },
+            "duration_ms": 278386,
+            "likes": 0,
+            "addedBy": {
+                "_id": {
+                    "$oid": "5b34aa82c661300014ce62aa"
+                },
+                "spotifyId": "llaurenss1",
+                "displayName": null,
+                "country": "NL",
+                "username": "llaurenss1",
+                "email": "laurens1233@gmail.com",
+                "accessToken": "BQBER9Duf5SHkRKXIi0z141r8L8AFqdhIKCb34S93-_W8Ky33Sgjp4JMbmJF-zq2s_rzjp0b3vMyjaWFtvpVn6M4R0nD72CMq3N1iP61AP6ZRtQpLnEQlnC4fREHdlwUM1vaCu1itATdJyzqMXexXrbhkTiabDWADjrb9-px5XM6bJGXxP_-Z8eyB0G7Ng",
+                "refreshToken": "AQBBI94rLIuOs48QZsMoNO3V4mzg2QkccPdIHKL_OIDWW4m-GvFzixRskYtDntAplj8msOTtoqqBRVMar7y8GnoJE28Vab2B9AKCsGWJ79akNlc4r4Qhuuh_EdRoR3_J7ds",
+                "__v": 0
+            },
+            "isPlaying": false,
+            "updatedAt": {
+                "$date": "2018-09-04T07:08:05.380Z"
+            },
+            "createdAt": {
+                "$date": "2018-09-04T07:08:05.380Z"
+            }
+        }
+    ],
+    "createdAt": {
+        "$date": "2018-07-04T14:40:29.791Z"
+    },
+    "updatedAt": {
+        "$date": "2018-09-05T10:46:23.911Z"
+    },
+    "__v": 50
+}

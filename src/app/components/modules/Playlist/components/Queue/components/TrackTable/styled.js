@@ -29,8 +29,20 @@ export const Th = styled.th`
     opacity: 0.8;
 `;
 
-export const Img = styled.img`
+export const TrackImg = styled.img`
     height: auto;
     width: 72%;
     border-radius: 4px;
+`;
+
+export const UserImg = styled.img`
+    width: 2.2em;
+    margin-right: 0.8em;
+    border-radius: 50%;
+`;
+
+export const UserName = styled.p`
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
 `;

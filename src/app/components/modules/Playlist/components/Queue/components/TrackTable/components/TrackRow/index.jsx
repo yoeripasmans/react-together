@@ -2,7 +2,7 @@ import React from 'react';
 import PT from 'prop-types';
 
 import { Button, ScPlusIcon, ScCrossIcon } from './styled';
-import { Tr, Td, Img } from '../../styled';
+import { Tr, Td, TrackImg, UserImg, UserName } from '../../styled';
 
 const TrackRow = ({
     track,
@@ -19,10 +19,13 @@ const TrackRow = ({
 
     return (
         <Tr>
-            <Td><Img src={track.image} alt={track.name} /></Td>
+            <Td><TrackImg src={track.album.images[1].url} alt={track.name} /></Td>
             <Td>{track.name}</Td>
-            <Td>{track.artistName}</Td>
-            <Td>Laurens Booij</Td>
+            <Td>{track.artists[0].name}</Td>
+            <Td>
+                <UserImg src={track.addedBy.profilePic || 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png'} />
+                <UserName>{track.addedBy.displayName || track.addedBy.username}</UserName>
+            </Td>
             <Td><Button onClick={() => tableMutateHandler(track)}>{ButtonSvg}</Button></Td>
         </Tr>
     );

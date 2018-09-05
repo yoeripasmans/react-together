@@ -1,4 +1,5 @@
 import createAction from 'services/createAction';
+import data from './data.json';
 
 // Action  Types
 const GET_TRACKS = 'GET_TRACKS';
@@ -13,7 +14,7 @@ const REMOVE_TRACK = 'REMOVE_TRACK';
 const initialState = {
     error: false,
     loading: false,
-    tracks: [],
+    playlistData: {},
     tracksLoaded: false,
 };
 
@@ -24,12 +25,7 @@ export default (state = initialState, { type, payload }) => {
             ...state,
             loading: false,
             tracksLoaded: true,
-            tracks: payload.map(track => ({
-                url: track.url,
-                name: track.name,
-                image: track.image[0]['#text'],
-                artistName: track.artist.name,
-            })),
+            playlistData: data,
         };
     case GET_TRACKS_FAILED:
         return {
@@ -67,19 +63,25 @@ export const addTrack = createAction(ADD_TRACK);
 
 export const removeTrack = createAction(REMOVE_TRACK);
 
-export const getTracks = () => (dispatch, getState, api) => {
+export const getTracks = () => (dispatch) => {
     dispatch({ type: GET_TRACKS });
 
-    const query = {
-        method: 'chart.gettoptracks',
-    };
+    // const query = {
+    //     method: 'chart.gettoptracks',
+    // };
+    //
+    // api.get({ path: '', query })
+    //     .then((res) => {
+    //         dispatch(getTracksSuccess(res.tracks.track));
+    //     }).catch((err) => {
+    //         console.log('errr',err);
+    //     });
+    //
+    //
 
-    api.get({ path: '', query })
-        .then((res) => {
-            dispatch(getTracksSuccess(res.tracks.track));
-        }).catch((err) => {
-            console.log('errr',err);
-        });
+    setTimeout(() => {
+        dispatch({ type: GET_TRACKS_SUCCESS });
+    }, 1000);
 };
 
 
