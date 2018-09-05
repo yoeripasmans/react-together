@@ -1,0 +1,23 @@
+const mongoose = require('mongoose');
+// Set up default mongoose connection
+const mongoDB = process.env.dbURI;
+mongoose.connect(mongoDB);
+// Get Mongoose to use the global promise library
+mongoose.Promise = global.Promise;
+// Get the default connection
+const db = mongoose.connection;
+
+// When successfully connected
+db.on('connected', () => {
+  console.log('Mongoose default connection open to ' + mongoDB);
+});
+
+// If the connection throws an error
+db.on('error',(err) => {
+  console.log('Mongoose default connection error: ' + err);
+});
+
+// When the connection is disconnected
+db.on('disconnected', () => {
+  console.log('Mongoose default connection disconnected');
+});

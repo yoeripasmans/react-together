@@ -14,7 +14,7 @@ export default () => injectGlobal`
     }
 
     main {
-        max-width: 70rem;
+        max-width: 77rem;
         margin: 0 auto;
         padding: 0 1rem;
     }

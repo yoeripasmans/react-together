@@ -22,6 +22,10 @@ app.get('*', (req, res) => {
     res.send(renderFullPage({}));
 });
 
+app.get('/api/hello', (req, res) => {
+    res.send({ express: 'Hello From Express' });
+});
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}/`);

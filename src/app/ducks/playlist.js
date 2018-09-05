@@ -77,6 +77,8 @@ export const getTracks = () => (dispatch, getState, api) => {
     api.get({ path: '', query })
         .then((res) => {
             dispatch(getTracksSuccess(res.tracks.track));
+        }).catch((err) => {
+            console.log('errr',err);
         });
 };
 
