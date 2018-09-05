@@ -10,6 +10,7 @@ export default () => injectGlobal`
         box-sizing: border-box;
         background-color: #000;
         color: #fff;
+        -webkit-font-smoothing: antialiased;
     }
 
     main {
