@@ -7,9 +7,10 @@ import _ from 'lodash/fp';
 import { getSearchResults, resetSearchResults, setSearchLoading } from 'ducks/search';
 import { addTrack } from 'ducks/playlist';
 
-import TrackTable from './components/TrackTable';
+import SearchResultsTable from './components/SearchResultsTable';
 import { Section, ScLoader } from './styled';
 import SearchHeader from './components/SearchHeader';
+import PersonalPlaylists from './components/PersonalPlaylists';
 
 class AddTrack extends Component {
     state = {
@@ -45,6 +46,13 @@ class AddTrack extends Component {
 
     render() {
         const { results, loading } = this.props;
+
+        const ShownContent = this.state.value.length > 0 ? (<SearchResultsTable
+            tracks={results}
+            mutateButtonType="AddTrack"
+            tableMutateHandler={this.addTrackHandler}
+        />) : <PersonalPlaylists />;
+
         return (
             <Section>
                 <SearchHeader
@@ -53,11 +61,7 @@ class AddTrack extends Component {
                     inputClearHandler={this.inputClearHandler}
                 />
 
-                {loading ? <ScLoader /> : <TrackTable
-                    tracks={results}
-                    mutateButtonType="AddTrack"
-                    tableMutateHandler={this.addTrackHandler}
-                />}
+                {loading ? <ScLoader /> : ShownContent }
             </Section>
         );
     }
