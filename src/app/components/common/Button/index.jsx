@@ -14,19 +14,25 @@ const ScButton = styled.button`
     cursor: pointer;
     outline: none;
 
+    :hover {
+        background: rgba(0, 0, 0, 0.1);
+        transition: background .3s;
+    }
+
     svg {
-        margin-left: 10px;
+        margin-left: 1rem;
     }
 `;
 
-const Button = ({ children, Icon }) => (
-    <ScButton>
+const Button = ({ buttonClickHandler, children, Icon }) => (
+    <ScButton onClick={buttonClickHandler} >
         <span>{children}</span>
         {Icon && <Icon />}
     </ScButton>
 );
 
 Button.propTypes = {
+    buttonClickHandler: PT.func,
     children: PT.string,
     Icon: PT.func,
 };
