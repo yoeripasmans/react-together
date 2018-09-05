@@ -2,7 +2,7 @@ module.exports = ({ html = '', styleTags }) => (
     `
         <!DOCTYPE html>
         <meta charset="utf-8">
-        <title>React Redux Boilerplate</title>
+        <title>Spotify Together</title>
         <link rel="shortcut icon" href="/static/favicon.ico" />
         ${styleTags || ''}
         ${html ? '<link rel="stylesheet" type="text/css" href="/style.css">' : ''}
