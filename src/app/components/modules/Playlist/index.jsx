@@ -8,6 +8,7 @@ import PlaylistHeader from 'modules/Playlist/components/PlaylistHeader';
 import ActiveUsers from 'modules/Playlist/components/ActiveUsers';
 import Queue from 'modules/Playlist/components/Queue';
 import Loader from 'common/Loader';
+import BackgroundImage from 'common/BackgroundImage';
 
 const ScLoader = styled(Loader)`
     position: fixed;
@@ -41,6 +42,7 @@ class Playlist extends Component {
                     tracks={tracks}
                     tableMutateHandler={this.removeTrackHandler}
                 />
+                <BackgroundImage />
             </Fragment>
         );
     }
