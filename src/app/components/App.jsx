@@ -6,7 +6,7 @@ import AddTrack from 'modules/AddTrack';
 const App = () => (
     <main>
         <Switch>
-            <Route path="/playlist" component={Playlist} exact />
+            <Route path="/playlist/:id" component={Playlist} exact />
             <Route path="/search" component={AddTrack} exact />
             <Redirect from="/" to="/playlist" exact />
         </Switch>

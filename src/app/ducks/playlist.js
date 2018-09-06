@@ -1,5 +1,7 @@
 import createAction from 'services/createAction';
-import data from './data.json';
+import axios from 'axios';
+
+const url = 'http://localhost:5000';
 
 // Action  Types
 const GET_TRACKS = 'GET_TRACKS';
@@ -25,7 +27,7 @@ export default (state = initialState, { type, payload }) => {
             ...state,
             loading: false,
             tracksLoaded: true,
-            playlistData: data,
+            playlistData: payload,
         };
     case GET_TRACKS_FAILED:
         return {
@@ -65,25 +67,12 @@ export const removeTrack = createAction(REMOVE_TRACK);
 
 export const getTracks = () => (dispatch) => {
     dispatch({ type: GET_TRACKS });
-
-    // const query = {
-    //     method: 'chart.gettoptracks',
-    // };
-    //
-    // api.get({ path: '', query })
-    //     .then((res) => {
-    //         dispatch(getTracksSuccess(res.tracks.track));
-    //     }).catch((err) => {
-    //         console.log('errr',err);
-    //     });
-    //
-    //
-
-    setTimeout(() => {
-        dispatch({ type: GET_TRACKS_SUCCESS });
-    }, 1000);
+    console.log(window.location);
+    axios.get(url + window.location.pathname).then((res) => {
+        const playlistData = res.data;
+        dispatch({ type: GET_TRACKS_SUCCESS, payload: playlistData });
+    });
 };
-
 
 export const resetItems = () => (dispatch) => {
     dispatch({ type: RESET_TRACKS });

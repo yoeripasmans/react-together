@@ -29,12 +29,14 @@
     "styled-components"
   ],
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "body-parser": "^1.18.3",
     "cloudinary": "^1.11.0",
     "compression": "^1.7.3",
     "connect-multiparty": "^2.1.1",
     "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "helmet": "^3.13.0",
     "isomorphic-fetch": "^2.2.1",
@@ -50,6 +52,7 @@
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
+    "socket.io": "^2.1.1",
     "styled-components": "^3.2.5",
     "svg-react-loader": "^0.4.5"
   },
