@@ -21,11 +21,17 @@ const Ul = styled.ul`
 `;
 
 const ActiveUsers = ({ userData }) => (
+
     <Section>
         <ActiveUsersHeader />
         <Ul>
-            {userData.map(user => (
-                <ActiveUserItem key={user.spotifyId} name={user.displayName} username={user.username} profilePic={user.profilePic} />
+            {userData.map(({
+                spotifyId,
+                displayName,
+                username,
+                profilePic,
+            }) => (
+                <ActiveUserItem key={spotifyId} name={displayName} username={username} profilePic={profilePic} />
             ))}
         </Ul>
     </Section>

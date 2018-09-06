@@ -2,10 +2,14 @@ import React from 'react';
 import PT from 'prop-types';
 import { Li, Img, P } from './styled';
 
-const ActiveUserItem = ({ name, username, profilePic }) => (
+const ActiveUserItem = ({
+    name,
+    username,
+    profilePic,
+}) => (
     <Li>
         <Img src={profilePic || 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png'} />
-        <P>{name || username || 'nameless motherfucker'}</P>
+        <P>{name || username || 'Guest'}</P>
     </Li>
 );
 

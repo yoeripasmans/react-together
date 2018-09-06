@@ -34,7 +34,6 @@ class Playlist extends Component {
         if (loading || Object.keys(playlistData).length === 0) {
             return <ScLoader />;
         }
-        console.log(playlistData);
         return (
             <Fragment>
                 <PlaylistHeader name={playlistData.name} createdBy={playlistData.createdBy} />
