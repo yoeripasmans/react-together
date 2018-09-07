@@ -2,9 +2,10 @@ import styled from 'styled-components';
 import Loader from 'common/Loader';
 
 export const Section = styled.section`
-    width: 100%;
+    max-width: 70rem;
     height: 100vh;
-    background-color: rgb(0,0,0);
+    padding: 2rem 0;
+    margin: auto;
 `;
 export const ScLoader = styled(Loader)`
     position: fixed;

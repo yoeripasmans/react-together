@@ -11,10 +11,7 @@ export const Img = styled.img`
 export const ImgContainer = styled.figure`
     display: flex;
     align-items: center;
-    overflow: hidden;
-    max-height: ${props => props.imgWidth}px;
     width: 100%;
-    margin: 0;
     border-radius: 5px;
     box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.3);
     margin: 0 0 0.4rem 0;

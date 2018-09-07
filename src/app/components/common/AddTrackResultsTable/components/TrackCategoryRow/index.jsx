@@ -1,14 +1,14 @@
 import React from 'react';
-import { Tr, Th } from '../../styled';
+import { Th, ExtendedTr } from './styled';
 
 const TrackCategoryRow = () => (
 
-    <Tr>
+    <ExtendedTr>
         <Th />
         <Th>Name</Th>
         <Th>Artist</Th>
         <Th />
-    </Tr>
+    </ExtendedTr>
 
 );
 

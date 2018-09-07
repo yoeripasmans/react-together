@@ -19,8 +19,8 @@ const ScButton = styled.button`
     }
 `;
 
-const Button = ({ children, Icon }) => (
-    <ScButton>
+const Button = ({ children, Icon, className }) => (
+    <ScButton className={className}>
         <span>{children}</span>
         {Icon && <Icon />}
     </ScButton>
@@ -28,6 +28,7 @@ const Button = ({ children, Icon }) => (
 
 Button.propTypes = {
     children: PT.string,
+    className: PT.string,
     Icon: PT.func,
 };
 

@@ -9,7 +9,6 @@ class PlaylistPreview extends React.Component {
 
         // declare refs
         this.liRef = React.createRef();
-        this.imgRef = React.createRef();
         this.spanRef = React.createRef();
     }
 
@@ -17,16 +16,6 @@ class PlaylistPreview extends React.Component {
         marginLeft: 0,
         animationDuration: 2,
         imgWidth: null,
-    }
-
-    // set imgWidth tot width of Img when component is mounted
-
-    componentDidMount() {
-        // need to get width of an element after it is rendered and store it in state
-        // eslint-disable-next-line
-        this.setState({
-            imgWidth: this.imgRef.current.offsetWidth,
-        });
     }
 
     // calculate difference in length between span and li and set state with a marginLeft
@@ -60,7 +49,7 @@ class PlaylistPreview extends React.Component {
                     innerRef={this.liRef}
                 >
                     <ImgContainer imgWidth={this.state.imgWidth}>
-                        <Img innerRef={this.imgRef} alt="Playlist cover" src={imgSrc} />
+                        <Img alt="Playlist cover" src={imgSrc} />
                     </ImgContainer>
                     <P>
                         <Span
