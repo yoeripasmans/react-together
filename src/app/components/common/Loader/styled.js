@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 const barAnimation = keyframes`
         0% {
-            height: 50px;
+
         }
         100% {
             height: 10px;
@@ -11,7 +11,7 @@ const barAnimation = keyframes`
 export const Div = styled.div`
     display: flex;
     align-items: flex-end;
-    height: 100px;
+    height: 60px;
 `;
 export const Bar = styled.div`
     width: 3px;
@@ -21,26 +21,26 @@ export const Bar = styled.div`
     margin: 0 0.25rem;
 `;
 export const Bar1 = styled(Bar)`
-    animation: ${barAnimation} 0.5s ease-out infinite alternate;
-    height: 50px;
+    animation: ${barAnimation} 0.28s ease-in-out infinite alternate;
+    height: 60px;
 `;
 export const Bar2 = styled(Bar)`
-    animation: ${barAnimation} 1s ease-out infinite alternate;
-    height: 50px;
+    animation: ${barAnimation} 0.29s ease-in-out infinite alternate;
+    height: 45px;
 `;
 export const Bar3 = styled(Bar)`
-    animation: ${barAnimation} 1.7s ease-out infinite alternate;
-    height: 50px;
+    animation: ${barAnimation} 0.26s ease-in-out infinite alternate;
+    height: 40px;
 `;
 export const Bar4 = styled(Bar)`
-    animation: ${barAnimation} 1.5s ease-out infinite alternate;
-    height: 50px;
+    animation: ${barAnimation} 0.3s ease-in-out infinite alternate;
+    height: 25px;
 `;
 export const Bar5 = styled(Bar)`
-    animation: ${barAnimation} 0.7s ease-out infinite alternate;
-    height: 50px;
+    animation: ${barAnimation} 0.2s ease-in-out infinite alternate;
+    height: 15px;
 `;
 export const Bar6 = styled(Bar)`
-    animation: ${barAnimation} 1.3s ease-out infinite alternate;
-    height: 50px;
+    animation: ${barAnimation} 0.2s ease-in-out infinite alternate;
+    height: 20px;
 `;

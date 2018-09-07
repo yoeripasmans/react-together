@@ -1,8 +1,9 @@
 import React from 'react';
 import PT from 'prop-types';
 
-import { Button, ScPlusIcon, ScCrossIcon } from './styled';
-import { Tr, Td, Img } from '../../styled';
+import { Td, ImgTd, NameTd, ArtistTd, ButtonTd, ExtendedTr, Button, ScPlusIcon, ScCrossIcon, Img } from './styled';
+import { Tr } from '../../styled';
+
 
 const TrackRow = ({
     track,
@@ -18,12 +19,12 @@ const TrackRow = ({
     }
 
     return (
-        <Tr>
-            <Td><Img src={track.image} alt={track.name} /></Td>
-            <Td>{track.name}</Td>
-            <Td>{track.artistName}</Td>
-            <Td><Button onClick={() => tableMutateHandler(track)}>{ButtonSvg}</Button></Td>
-        </Tr>
+        <ExtendedTr>
+            <ImgTd><Img src={track.image} alt={track.name} /></ImgTd>
+            <NameTd>{track.name}</NameTd>
+            <ArtistTd>{track.artistName}</ArtistTd>
+            <ButtonTd><Button onClick={() => tableMutateHandler(track)}>{ButtonSvg}</Button></ButtonTd>
+        </ExtendedTr>
     );
 };
 

@@ -6,12 +6,13 @@ import CloseIcon from 'images/letter-x.png';
 import { Div, Input, Img } from './styled';
 
 const SearchBar = ({
+    className,
     value,
     placeholderValue,
     inputOnChangeHandler,
     inputClearHandler,
 }) => (
-    <Div>
+    <Div className={className}>
         <Input onChange={inputOnChangeHandler} placeholder={placeholderValue} value={value} />
         <Img
             alt="Search icon"
@@ -23,10 +24,11 @@ const SearchBar = ({
 );
 
 SearchBar.propTypes = {
-    value: PT.string,
-    placeholderValue: PT.string,
+    className: PT.string,
     inputOnChangeHandler: PT.func.isRequired,
     inputClearHandler: PT.func.isRequired,
+    placeholderValue: PT.string,
+    value: PT.string,
 };
 
 export default SearchBar;
