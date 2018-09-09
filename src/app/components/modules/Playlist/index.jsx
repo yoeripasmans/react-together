@@ -20,7 +20,9 @@ const ScLoader = styled(Loader)`
 
 class Playlist extends Component {
     componentDidMount() {
+        // if (this.props.tracksLoaded === false) {
         this.props.getPlaylistData();
+        // }
     }
 
     removeTrackHandler = (track) => {
@@ -52,7 +54,7 @@ Playlist.propTypes = {
     getPlaylistData: PT.func.isRequired,
     loading: PT.bool,
     playlistData: PT.object,
-    tracksLoaded: PT.bool,
+    // tracksLoaded: PT.bool,
     removeTrack: PT.func,
 };
 

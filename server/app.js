@@ -1,13 +1,15 @@
 const express = require('express');
-const dotenv = require('dotenv').load();
+require('dotenv').load();
 
 const app = express();
 const routes = require('./routes/');
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 const cors = require('cors');
-const data = require('./data.json');
-const db = require('./models/index');
+const mongoose = require('mongoose');
+
+// Connect the database
+mongoose.connect(process.env.dbURI, { useNewUrlParser: true });
 
 const port = process.env.PORT || 5000;
 

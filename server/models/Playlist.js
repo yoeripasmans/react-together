@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
-
-const trackSchema = new Schema({
+const trackSchema = new mongoose.Schema({
     name: String,
     id: String,
     uri: String,
@@ -15,32 +13,27 @@ const trackSchema = new Schema({
     isPlaying: Boolean,
     primaryColor: String,
 }, {
-    timestamps: true
+    timestamps: true,
 });
-// create a schema
-const playlistSchema = new Schema(
-{
+
+const playlistSchema = new mongoose.Schema({
     name: String,
-	description: String,
-	image: String,
-	tracks: [trackSchema],
-	restricted: Boolean,
-	private: Boolean,
-	password: String,
-	users: Array,
-	activeUsers: Array,
-	admins: Array,
-	createdBy: Object,
-	rules: Object,
-	qrCodeId: String,
-	isPlaying: Boolean
+    description: String,
+    image: String,
+    tracks: [trackSchema],
+    restricted: Boolean,
+    private: Boolean,
+    password: String,
+    users: Array,
+    activeUsers: Array,
+    admins: Array,
+    createdBy: Object,
+    rules: Object,
+    qrCodeId: String,
+    isPlaying: Boolean,
 
 }, {
-      timestamps: true
+    timestamps: true,
 });
 
-
-// Set to user model
-const Playlists = mongoose.model('Playlists', playlistSchema);
-
-module.exports = Playlists;
+module.exports = mongoose.model('Playlists', playlistSchema);

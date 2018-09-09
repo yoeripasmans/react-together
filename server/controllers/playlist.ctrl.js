@@ -6,11 +6,9 @@ module.exports = {
             .exec((err, playlist) => {
                 if (err) {
                     res.send(err);
-                }
-                else if (!playlist) {
+                } else if (!playlist) {
                     res.send(404);
-                }
-                else {
+                } else {
                     res.send(playlist);
                 }
                 next();
@@ -20,11 +18,9 @@ module.exports = {
         Playlist.findById(req.params.id).exec((err, playlist) => {
             if (err) {
                 res.send(err);
-            }
-            else if (!playlist) {
+            } else if (!playlist) {
                 res.send(404);
-            }
-            else {
+            } else {
                 res.send(playlist);
             }
             next();
