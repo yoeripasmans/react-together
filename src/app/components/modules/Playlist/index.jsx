@@ -38,7 +38,7 @@ class Playlist extends Component {
         return (
             <Fragment>
                 <MainHeader />
-                <PlaylistHeader name={playlistData.name} createdBy={playlistData.createdBy} />
+                <PlaylistHeader name={playlistData.name} createdBy={playlistData.createdBy} tracks={playlistData.tracks} />
                 <ActiveUsers userData={playlistData.activeUsers} />
                 <Queue
                     tracks={playlistData.tracks}

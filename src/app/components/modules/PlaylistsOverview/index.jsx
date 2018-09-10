@@ -29,7 +29,7 @@ class PlaylistsOverview extends React.Component {
         return (
             <ul>
                 {playlists.map(playlist => (
-                    <Link to={`/playlist/${playlist._id}`} id={playlist.id}>{playlist.name}</Link>
+                    <Link to={`/playlist/${playlist._id}`} id={playlist._id}>{playlist.name}</Link>
                 ))}
             </ul>
         );
