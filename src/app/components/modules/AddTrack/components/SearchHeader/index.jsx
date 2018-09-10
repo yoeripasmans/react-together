@@ -41,7 +41,7 @@ const ExtendedSearchBar = styled(SearchBar)`
 const SearchHeader = ({ searchValue, inputOnChangeHandler, inputClearHandler }) => (
     <Header>
         <GridDiv1>
-            <BackButton destination="/playlist" value="Back to playlist" onClickHandler={inputClearHandler} />
+            <BackButton destination="/playlists" value="Back to playlist" onClickHandler={inputClearHandler} />
             <H1>Add songs</H1>
         </GridDiv1>
         <ExtendedSearchBar

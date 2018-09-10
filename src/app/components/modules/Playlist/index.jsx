@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import PT from 'prop-types';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
-import { getTracks, resetItems, removeTrack } from 'ducks/playlist';
+import { getPlaylistData, resetItems, removeTrack } from 'ducks/playlist';
 
 import MainHeader from 'common/MainHeader';
 import PlaylistHeader from 'modules/Playlist/components/PlaylistHeader';
@@ -20,9 +20,9 @@ const ScLoader = styled(Loader)`
 
 class Playlist extends Component {
     componentDidMount() {
-        if (this.props.tracksLoaded === false) {
-            this.props.getTracks();
-        }
+        // if (this.props.tracksLoaded === false) {
+        this.props.getPlaylistData();
+        // }
     }
 
     removeTrackHandler = (track) => {
@@ -38,7 +38,7 @@ class Playlist extends Component {
         return (
             <Fragment>
                 <MainHeader />
-                <PlaylistHeader name={playlistData.name} createdBy={playlistData.createdBy} />
+                <PlaylistHeader name={playlistData.name} createdBy={playlistData.createdBy} tracks={playlistData.tracks} />
                 <ActiveUsers userData={playlistData.activeUsers} />
                 <Queue
                     tracks={playlistData.tracks}
@@ -51,10 +51,10 @@ class Playlist extends Component {
 }
 
 Playlist.propTypes = {
-    getTracks: PT.func.isRequired,
+    getPlaylistData: PT.func.isRequired,
     loading: PT.bool,
     playlistData: PT.object,
-    tracksLoaded: PT.bool,
+    // tracksLoaded: PT.bool,
     removeTrack: PT.func,
 };
 
@@ -63,4 +63,4 @@ export default connect(state => ({
     playlistData: state.playlist.playlistData,
     loading: state.playlist.loading,
     tracksLoaded: state.playlist.tracksLoaded,
-}), { getTracks, resetItems, removeTrack })(Playlist);
+}), { getPlaylistData, resetItems, removeTrack })(Playlist);

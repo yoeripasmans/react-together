@@ -1,10 +1,12 @@
 import createAction from 'services/createAction';
-import data from './data.json';
+import axios from 'axios';
+
+const url = 'http://localhost:5000';
 
 // Action  Types
-const GET_TRACKS = 'GET_TRACKS';
-const GET_TRACKS_SUCCESS = 'GET_TRACKS_SUCCESS';
-const GET_TRACKS_FAILED = 'GET_TRACKS_FAILED';
+const GET_PLAYLISTDATA = 'GET_PLAYLISTDATA';
+const GET_PLAYLISTDATA_SUCCESS = 'GET_PLAYLISTDATA_SUCCESS';
+const GET_PLAYLISTDATA_FAILED = 'GET_PLAYLISTDATA_FAILED';
 const RESET_TRACKS = 'RESET_TRACKS';
 
 const ADD_TRACK = 'ADD_TRACK';
@@ -20,21 +22,21 @@ const initialState = {
 
 export default (state = initialState, { type, payload }) => {
     switch (type) {
-    case GET_TRACKS_SUCCESS:
+    case GET_PLAYLISTDATA_SUCCESS:
         return {
             ...state,
             loading: false,
             tracksLoaded: true,
-            playlistData: data,
+            playlistData: payload,
         };
-    case GET_TRACKS_FAILED:
+    case GET_PLAYLISTDATA_FAILED:
         return {
             ...state,
             error: true,
             loading: false,
             tracksLoaded: false,
         };
-    case GET_TRACKS:
+    case GET_PLAYLISTDATA:
         return {
             ...state,
             loading: true,
@@ -56,34 +58,20 @@ export default (state = initialState, { type, payload }) => {
 };
 
 // Actions
-export const getTracksSuccess = createAction(GET_TRACKS_SUCCESS);
-export const getTracksFailed = createAction(GET_TRACKS_FAILED);
+export const getPlaylistDataSuccess = createAction(GET_PLAYLISTDATA_SUCCESS);
+export const getPlaylistDataFailed = createAction(GET_PLAYLISTDATA_FAILED);
 
 export const addTrack = createAction(ADD_TRACK);
 
 export const removeTrack = createAction(REMOVE_TRACK);
 
-export const getTracks = () => (dispatch) => {
-    dispatch({ type: GET_TRACKS });
-
-    // const query = {
-    //     method: 'chart.gettoptracks',
-    // };
-    //
-    // api.get({ path: '', query })
-    //     .then((res) => {
-    //         dispatch(getTracksSuccess(res.tracks.track));
-    //     }).catch((err) => {
-    //         console.log('errr',err);
-    //     });
-    //
-    //
-
-    setTimeout(() => {
-        dispatch({ type: GET_TRACKS_SUCCESS });
-    }, 1000);
+export const getPlaylistData = () => (dispatch) => {
+    dispatch({ type: GET_PLAYLISTDATA });
+    axios.get(url + window.location.pathname).then((res) => {
+        const playlistData = res.data;
+        dispatch({ type: GET_PLAYLISTDATA_SUCCESS, payload: playlistData });
+    });
 };
-
 
 export const resetItems = () => (dispatch) => {
     dispatch({ type: RESET_TRACKS });
