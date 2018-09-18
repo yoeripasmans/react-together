@@ -7,7 +7,7 @@ const server = require('http').Server(app);
 const io = require('socket.io')(server);
 const cors = require('cors');
 const mongoose = require('mongoose');
-
+console.log(process.env);
 // Connect the database
 mongoose.connect(process.env.dbURI, { useNewUrlParser: true });
 

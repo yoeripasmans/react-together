@@ -28,6 +28,7 @@ class PlaylistsOverview extends React.Component {
         }
         return (
             <ul>
+                <a href="https://api.whatsapp.com/send?phone=31648495208">Send Message</a>
                 {playlists.map(playlist => (
                     <Link to={`/playlist/${playlist._id}`} id={playlist._id}>{playlist.name}</Link>
                 ))}
