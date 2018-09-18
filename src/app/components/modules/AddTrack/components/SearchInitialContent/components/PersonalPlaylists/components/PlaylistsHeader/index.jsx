@@ -11,10 +11,20 @@ const Header = styled.header`
     margin-bottom: 2em;
 `;
 
+const H3 = styled.h3`
+        margin: 0;
+`;
+
+const ExtendedButton = styled(Button)`
+    @media (max-width: 750px) {
+        display: none;
+    }
+`;
+
 const PlaylistsHeader = () => (
     <Header>
-        <h3>Personal playlists</h3>
-        <Button Icon={MusicIcon}>View all</Button>
+        <H3>Personal playlists</H3>
+        <ExtendedButton Icon={MusicIcon}>View all</ExtendedButton>
     </Header>
 );
 

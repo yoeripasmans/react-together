@@ -24,8 +24,13 @@ const ScButton = styled.button`
     }
 `;
 
-const Button = ({ buttonClickHandler, children, Icon }) => (
-    <ScButton onClick={buttonClickHandler} >
+const Button = ({
+    className,
+    buttonClickHandler,
+    children,
+    Icon,
+}) => (
+    <ScButton className={className} onClick={buttonClickHandler} >
         <span>{children}</span>
         {Icon && <Icon />}
     </ScButton>
@@ -34,6 +39,7 @@ const Button = ({ buttonClickHandler, children, Icon }) => (
 Button.propTypes = {
     buttonClickHandler: PT.func,
     children: PT.string,
+    className: PT.string,
     Icon: PT.func,
 };
 

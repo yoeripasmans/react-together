@@ -5,12 +5,13 @@ import _ from 'lodash/fp';
 // import Loader from 'react-loader';
 
 import { getSearchResults, resetSearchResults, setSearchLoading } from 'ducks/search';
-import { addTrack } from 'ducks/playlist';
+import { addTrack, getPlaylistData } from 'ducks/playlist';
 
-import SearchResultsTable from './components/SearchResultsTable';
+import BackgroundImage from 'common/BackgroundImage';
+import AddTrackResultsTable from 'common/AddTrackResultsTable';
 import { Section, ScLoader } from './styled';
 import SearchHeader from './components/SearchHeader';
-import PersonalPlaylists from './components/PersonalPlaylists';
+import SearchInitialContent from './components/SearchInitialContent';
 
 class AddTrack extends Component {
     state = {
@@ -19,6 +20,10 @@ class AddTrack extends Component {
 
     componentDidMount() {
         this.inputClearHandler();
+
+        if (this.props.tracksLoaded === false) {
+            this.props.getPlaylistData();
+        }
     }
 
     getSearchResults = _.debounce(300)(() => {
@@ -36,22 +41,34 @@ class AddTrack extends Component {
             () => this.getSearchResults(),
         );
     };
-
     inputClearHandler = () => {
         this.setState(
             { value: '' },
             () => this.props.resetSearchResults(),
         );
     };
-
     render() {
-        const { results, loading } = this.props;
+        const {
+            topTracks,
+            tracksLoaded,
+            results,
+            loading,
+        } = this.props;
 
-        const ShownContent = this.state.value.length > 0 ? (<SearchResultsTable
-            tracks={results}
-            mutateButtonType="AddTrack"
-            tableMutateHandler={this.addTrackHandler}
-        />) : <PersonalPlaylists />;
+        const ShownContent = this.state.value.length > 0 ?
+            (
+                <AddTrackResultsTable
+                    tracks={results}
+                    mutateButtonType="AddTrack"
+                    tableMutateHandler={this.addTrackHandler}
+                />
+            ) : (
+                <SearchInitialContent
+                    topTracks={topTracks}
+                    tracksLoaded={tracksLoaded}
+                    addTrackHandler={this.addTrackHandler}
+                />
+            );
 
         return (
             <Section>
@@ -62,26 +79,33 @@ class AddTrack extends Component {
                 />
 
                 {loading ? <ScLoader /> : ShownContent }
+                <BackgroundImage />
             </Section>
         );
     }
 }
 
 AddTrack.propTypes = {
-    getSearchResults: PT.func.isRequired,
-    resetSearchResults: PT.func.isRequired,
-    setSearchLoading: PT.func,
     addTrack: PT.func,
-    results: PT.array,
+    getSearchResults: PT.func.isRequired,
+    getPlaylistData: PT.func.isRequired,
     loading: PT.bool,
+    resetSearchResults: PT.func.isRequired,
+    results: PT.array,
+    setSearchLoading: PT.func,
+    topTracks: PT.array,
+    tracksLoaded: PT.bool,
 };
 
 export default connect(state => ({
-    results: state.search.results,
     loading: state.search.loading,
+    results: state.search.results,
+    topTracks: state.playlist.tracks,
+    tracksLoaded: state.playlist.tracksLoaded,
 }), {
     getSearchResults,
     resetSearchResults,
     setSearchLoading,
     addTrack,
+    getPlaylistData, // should be replaced by call getting toptracks data
 })(AddTrack);

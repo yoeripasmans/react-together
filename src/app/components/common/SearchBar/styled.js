@@ -5,6 +5,7 @@ export const Div = styled.div`
     align-items: center;
     align-self: start;
     justify-self: end;
+    width: 400px;
 `;
 export const Input = styled.input`
     position: relative;
@@ -14,7 +15,7 @@ export const Input = styled.input`
     font-size: 1em;
     padding: 0 1em;
     justify-self: end;
-    width: 400px;
+    width: 100%;
     height: 40px;
     border-radius: 40px;
     background-color: rgba(80, 80, 80, 0.4);
