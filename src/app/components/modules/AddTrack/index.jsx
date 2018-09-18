@@ -5,7 +5,7 @@ import _ from 'lodash/fp';
 // import Loader from 'react-loader';
 
 import { getSearchResults, resetSearchResults, setSearchLoading } from 'ducks/search';
-import { addTrack, getTracks } from 'ducks/playlist';
+import { addTrack, getPlaylistData } from 'ducks/playlist';
 
 import BackgroundImage from 'common/BackgroundImage';
 import AddTrackResultsTable from 'common/AddTrackResultsTable';
@@ -22,7 +22,7 @@ class AddTrack extends Component {
         this.inputClearHandler();
 
         if (this.props.tracksLoaded === false) {
-            this.props.getTracks();
+            this.props.getPlaylistData();
         }
     }
 
@@ -88,7 +88,7 @@ class AddTrack extends Component {
 AddTrack.propTypes = {
     addTrack: PT.func,
     getSearchResults: PT.func.isRequired,
-    getTracks: PT.func.isRequired,
+    getPlaylistData: PT.func.isRequired,
     loading: PT.bool,
     resetSearchResults: PT.func.isRequired,
     results: PT.array,
@@ -107,5 +107,5 @@ export default connect(state => ({
     resetSearchResults,
     setSearchLoading,
     addTrack,
-    getTracks, // should be replaced by call getting toptracks data
+    getPlaylistData, // should be replaced by call getting toptracks data
 })(AddTrack);
