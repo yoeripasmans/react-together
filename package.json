@@ -1,8 +1,8 @@
 {
-  "name": "react-prime",
+  "name": "react-together",
   "version": "5.2.0",
-  "description": "A starter kit to create comprehensive React apps with Redux and serverside rendering.",
-  "author": "jornbostelaar",
+  "description": "An application to search and add songs to a list",
+  "author": "Yoeri Pasmans",
   "repository": {
     "type": "git",
     "url": "https://github.com/JBostelaar/react-redux-boilerplate"
