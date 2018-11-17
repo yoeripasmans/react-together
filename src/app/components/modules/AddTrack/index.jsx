@@ -47,11 +47,13 @@ class AddTrack extends Component {
     render() {
         const { results, loading } = this.props;
 
-        const ShownContent = this.state.value.length > 0 ? (<SearchResultsTable
-            tracks={results}
-            mutateButtonType="AddTrack"
-            tableMutateHandler={this.addTrackHandler}
-        />) : <PersonalPlaylists />;
+        const ShownContent = this.state.value.length > 0
+            ? (<SearchResultsTable
+                tracks={results}
+                mutateButtonType="AddTrack"
+                tableMutateHandler={this.addTrackHandler}
+            />)
+            : null;
 
         return (
             <Section>

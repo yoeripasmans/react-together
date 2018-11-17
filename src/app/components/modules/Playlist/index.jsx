@@ -37,7 +37,6 @@ class Playlist extends Component {
         return (
             <Fragment>
                 <PlaylistHeader />
-                <ActiveUsers />
                 <Queue
                     tracks={tracks}
                     tableMutateHandler={this.removeTrackHandler}
