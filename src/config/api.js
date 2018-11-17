@@ -1,1 +1,1 @@
-export default 'http://ws.audioscrobbler.com/2.0';
+export default 'https://ws.audioscrobbler.com/2.0';
