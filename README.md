@@ -1,11 +1,12 @@
 # React Together
-A existing project with the core functionality rebuild in React to compare it with `vanilla` Javascript.
 [![Build Status](https://travis-ci.org/JBostelaar/react-prime.svg?branch=master)](https://travis-ci.org/JBostelaar/react-prime)
 [![dependencies Status](https://david-dm.org/jbostelaar/react-prime/status.svg)](https://david-dm.org/jbostelaar/react-prime)
 [![devDependencies Status](https://david-dm.org/jbostelaar/react-prime/dev-status.svg)](https://david-dm.org/jbostelaar/react-prime?type=dev)
 [![GitHub release](https://img.shields.io/github/release/jbostelaar/react-prime.svg)](https://github.com/JBostelaar/react-prime)
 
 ---
+
+A existing project with the core functionality rebuild in React to compare it with `vanilla` Javascript.
 
 ## Getting Started
 `$ git clone https://github.com/yoeripasmans/react-together`
