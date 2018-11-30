@@ -1,4 +1,5 @@
-# React Prime
+# React Together
+A existing project with the core functionality rebuild in React to compare it with `vanilla` Javascript.
 [![Build Status](https://travis-ci.org/JBostelaar/react-prime.svg?branch=master)](https://travis-ci.org/JBostelaar/react-prime)
 [![dependencies Status](https://david-dm.org/jbostelaar/react-prime/status.svg)](https://david-dm.org/jbostelaar/react-prime)
 [![devDependencies Status](https://david-dm.org/jbostelaar/react-prime/dev-status.svg)](https://david-dm.org/jbostelaar/react-prime?type=dev)
@@ -7,9 +8,9 @@
 ---
 
 ## Getting Started
-`$ git clone https://github.com/JBostelaar/react-prime`
+`$ git clone https://github.com/yoeripasmans/react-together`
 
-`$ cd react-prime && npm install`
+`$ cd react-together && npm install`
 
 `$ npm start` (run in development mode)
 
@@ -38,13 +39,13 @@
 * Run webpack-bundle-analyzer: `$ npm run analyzer`
 
 ## Deployment
-Make sure all modules are installed:  
+Make sure all modules are installed:
 `$ npm install`
 
-Create a build for production, this will add a `/dist` folder to the root with all bundles.  
+Create a build for production, this will add a `/dist` folder to the root with all bundles.
 `$ npm run build`
 
-Run the server file to start server:  
+Run the server file to start server:
 `$ npm run server`
 
 For production I recommend to use [PM2](http://pm2.keymetrics.io/) to run the server with advanced process management.
@@ -58,10 +59,3 @@ This boilerplate uses the [Ducks](https://github.com/erikras/ducks-modular-redux
 
 ### Redux DevTools
 To use de Redux DevTools install the [Redux DevTools extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) from the chrome webstore.
-
-## Roadmap
-- [ ] Serverside data fetching
-- [ ] Initial set-up flow
-- [x] Styled Components
-- [x] Serverside rendering optional
-- [x] React Router v4
